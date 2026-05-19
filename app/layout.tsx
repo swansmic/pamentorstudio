@@ -41,9 +41,10 @@ export const metadata: Metadata = {
     description:
       "Longitudinal PA school admissions mentorship from an experienced admissions committee chair.",
   },
+  // STAGING ONLY — remove before public launch
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
 };
 

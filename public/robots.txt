@@ -1,0 +1,6 @@
+# STAGING ONLY — disallow all crawling during pre-launch
+# Remove this file and replace with a permissive robots.txt before going public.
+# Production robots.txt should allow: User-agent: * / Allow: /
+
+User-agent: *
+Disallow: /

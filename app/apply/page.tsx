@@ -17,7 +17,7 @@ export default function ApplyPage() {
       <PageHeader
         label="Apply for Coaching"
         title="Begin with an inquiry."
-        description="Applications are reviewed individually. Submitting this form initiates the inquiry process — it is not an enrollment commitment. A consultation will be offered if there appears to be a potential fit."
+        description="Applications are reviewed individually. Submitting this form initiates the inquiry process; it is not an enrollment commitment. A consultation will be offered if there appears to be a potential fit."
       />
 
       <ContentSection narrow>
@@ -47,7 +47,7 @@ export default function ApplyPage() {
                 {
                   step: "04",
                   label: "Enrollment decision",
-                  detail: "Enrollment is extended — or not — after the consultation. No pressure in either direction.",
+                  detail: "Enrollment is extended, or not, after the consultation. No pressure in either direction.",
                 },
               ].map((item) => (
                 <li key={item.step} className="flex gap-4">

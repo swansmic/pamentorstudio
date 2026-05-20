@@ -20,7 +20,7 @@ export default function BlogPage() {
       <PageHeader
         label="PA Mentor Studio Blog"
         title="Educational writing on the admissions process."
-        description="Substantive, honest perspective on PA school applications — written for applicants who want to understand the process, not just navigate it."
+        description="Substantive, honest perspective on PA school applications, written for applicants who want to understand the process, not just navigate it."
       />
 
       <ContentSection narrow>

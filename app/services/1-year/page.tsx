@@ -28,13 +28,13 @@ export default function OneYearPage() {
               The 1-Year pathway is designed for applicants who are within 12
               months of their intended application cycle. Your clinical hours
               are substantially in place, your academic record is settled, and
-              your central question is no longer whether you can apply — it is
+              your central question is no longer whether you can apply; it is
               how to apply with clarity and strategic purpose.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               This is not a pathway for applicants who are still completing
               prerequisites or building clinical experience. It is for those
-              who are genuinely ready to present themselves — and want expert
+              who are genuinely ready to present themselves and want expert
               support to do so as effectively as possible.
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function OneYearPage() {
             <h2 className="font-heading text-2xl font-semibold">What the mentorship covers</h2>
             <ul className="space-y-3 text-muted-foreground">
               {[
-                "Personal statement development — structure, narrative, and authentic voice",
+                "Personal statement development: structure, narrative, and authentic voice",
                 "CASPA application strategy and school selection",
                 "Clinical experience framing and presentation",
                 "Supplemental essay guidance for individual programs",
@@ -52,7 +52,7 @@ export default function OneYearPage() {
                 "Strategic reflection and self-assessment throughout the process",
               ].map((item) => (
                 <li key={item} className="flex gap-3 leading-relaxed">
-                  <span className="text-accent mt-1 shrink-0">—</span>
+                  <span className="text-accent mt-1 shrink-0">·</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -85,8 +85,8 @@ export default function OneYearPage() {
               PA Mentor Studio does not write application materials on your
               behalf. Ghostwriting, essay-writing services, and any form of
               misrepresentation are outside the scope of this work. The goal is
-              to help you present yourself — your actual experiences, your real
-              reasoning, your genuine voice — as clearly and compellingly as
+              to help you present yourself: your actual experiences, your real
+              reasoning, your genuine voice, as clearly and compellingly as
               possible.
             </p>
           </div>

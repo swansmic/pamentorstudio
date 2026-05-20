@@ -17,7 +17,7 @@ export default function TermsPage() {
       <ContentSection narrow>
         <div className="prose prose-editorial prose-sm max-w-none text-muted-foreground">
           <p className="text-xs text-muted-foreground mb-8">
-            Last updated: [DATE — to be completed by attorney before launch]
+            Last updated: [DATE: to be completed by attorney before launch]
           </p>
           <p className="leading-relaxed">
             These terms of service govern your use of pamentorstudio.com and

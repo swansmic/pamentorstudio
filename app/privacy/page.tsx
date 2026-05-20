@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
   title: "Privacy Policy",
-  description: "PA Mentor Studio privacy policy — how we collect, use, and protect your information.",
+  description: "PA Mentor Studio privacy policy: how we collect, use, and protect your information.",
   path: "/privacy",
   noIndex: true,
 });
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
       <ContentSection narrow>
         <div className="prose prose-editorial prose-sm max-w-none text-muted-foreground">
           <p className="text-xs text-muted-foreground mb-8">
-            Last updated: [DATE — to be completed by attorney before launch]
+            Last updated: [DATE: to be completed by attorney before launch]
           </p>
           <p className="leading-relaxed">
             This privacy policy describes how PA Mentor Studio (&ldquo;we,&rdquo;

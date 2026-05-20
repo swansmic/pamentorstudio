@@ -21,7 +21,7 @@ const lora = Lora({
 export const metadata: Metadata = {
   metadataBase: new URL("https://pamentorstudio.com"),
   title: {
-    default: "PA Mentor Studio — Strategic PA School Admissions Mentorship",
+    default: "PA Mentor Studio: Strategic PA School Admissions Mentorship",
     template: "%s | PA Mentor Studio",
   },
   description:
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://pamentorstudio.com",
     siteName: "PA Mentor Studio",
-    title: "PA Mentor Studio — Strategic PA School Admissions Mentorship",
+    title: "PA Mentor Studio: Strategic PA School Admissions Mentorship",
     description:
       "Longitudinal PA school admissions mentorship from an experienced admissions committee chair. Structured guidance for serious applicants.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PA Mentor Studio — Strategic PA School Admissions Mentorship",
+    title: "PA Mentor Studio: Strategic PA School Admissions Mentorship",
     description:
       "Longitudinal PA school admissions mentorship from an experienced admissions committee chair.",
   },

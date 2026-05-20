@@ -16,7 +16,7 @@ export default function HomePage() {
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mb-12">
             PA Mentor Studio offers longitudinal mentorship for PA school
-            applicants — structured, unhurried, and grounded in genuine
+            applicants: structured, unhurried, and grounded in genuine
             admissions expertise.
           </p>
           <Link
@@ -33,8 +33,8 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto px-6">
           <p className="font-heading text-2xl md:text-3xl text-foreground leading-relaxed">
             This is not a quick-fix course or an application review service.
-            It is a mentorship relationship — built over months or years —
-            with someone who has reviewed thousands of applications and sat on
+            It is a mentorship relationship built over months or years, with
+            someone who has reviewed thousands of applications and sat on
             the other side of the table.
           </p>
         </div>
@@ -79,7 +79,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-sm text-muted-foreground mt-8 max-w-xl">
-            Each pathway is a distinct structure — not a tier. The right fit
+            Each pathway is a distinct structure, not a tier. The right fit
             depends on where you are in your journey, not how much you&apos;re
             willing to invest.{" "}
             <Link
@@ -106,14 +106,14 @@ export default function HomePage() {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 The mentorship offered through PA Mentor Studio is grounded in
-                direct admissions committee experience — including reviewing
+                direct admissions committee experience, including reviewing
                 more than 3,000 PA school applications and contributing to
                 admissions selection decisions across multiple cycles.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 This is not coaching built on secondhand advice or general
                 application strategy. It is mentorship shaped by knowing, in
-                concrete terms, what matters to programs — and what doesn&apos;t.
+                concrete terms, what matters to programs, and what doesn&apos;t.
               </p>
               <Link
                 href="/about"
@@ -131,13 +131,9 @@ export default function HomePage() {
                     "PA school applications reviewed as an admissions committee chair",
                 },
                 {
-                  stat: "PAEA 2025",
-                  label: "Speaker at the 2025 PAEA Regional Conference",
-                },
-                {
                   stat: "Longitudinal",
                   label:
-                    "Mentorship across 1, 2, and 4-year structures — not one-time reviews",
+                    "Mentorship across 1, 2, and 4-year structures, not one-time reviews",
                 },
               ].map((item) => (
                 <div key={item.stat} className="border-l-2 border-accent pl-6">
@@ -161,11 +157,11 @@ export default function HomePage() {
             <p className="font-heading text-2xl md:text-3xl text-foreground leading-relaxed italic mb-6">
               &ldquo;Strong applications are built over time, not assembled at
               the last minute. The applicants who benefit most from this work
-              are those who want to understand the process — not just survive
+              are those who want to understand the process, not just survive
               it.&rdquo;
             </p>
             <footer className="text-sm text-muted-foreground">
-              — PA Mentor Studio
+              PA Mentor Studio
             </footer>
           </blockquote>
         </div>

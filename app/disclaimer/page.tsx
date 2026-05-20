@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
   title: "Disclaimer",
-  description: "PA Mentor Studio educational disclaimer — no outcome guarantees, no ghostwriting, no admissions promises.",
+  description: "PA Mentor Studio educational disclaimer: no outcome guarantees, no ghostwriting, no admissions promises.",
   path: "/disclaimer",
 });
 
@@ -41,8 +41,8 @@ export default function DisclaimerPage() {
             <p className="leading-relaxed">
               PA Mentor Studio does not write, ghostwrite, or substantially
               author application materials on behalf of clients. All written
-              submissions to PA school programs — including personal statements,
-              supplemental essays, and experience descriptions — must represent
+              submissions to PA school programs, including personal statements,
+              supplemental essays, and experience descriptions, must represent
               the applicant&apos;s own work and authentic voice.
             </p>
           </div>

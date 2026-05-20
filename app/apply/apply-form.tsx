@@ -138,7 +138,7 @@ export function ApplyForm() {
           <option value="1-year">1-Year Mentorship ($5,000)</option>
           <option value="2-year">2-Year Mentorship ($7,000)</option>
           <option value="4-year">4-Year Mentorship ($10,000)</option>
-          <option value="unsure">Unsure — I would like guidance</option>
+          <option value="unsure">Unsure: I would like guidance</option>
         </select>
       </div>
 
@@ -182,7 +182,7 @@ export function ApplyForm() {
           name="questions"
           rows={3}
           className={fieldClass}
-          placeholder="Optional — anything you would like addressed before or during a consultation."
+          placeholder="Optional: anything you would like addressed before or during a consultation."
         />
       </div>
 

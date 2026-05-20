@@ -9,7 +9,7 @@ export function SiteHeader() {
         <Link
           href="/"
           className="font-heading text-lg font-semibold text-foreground hover:text-primary transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring rounded-sm"
-          aria-label="PA Mentor Studio — go to homepage"
+          aria-label="PA Mentor Studio: go to homepage"
         >
           PA Mentor Studio
         </Link>

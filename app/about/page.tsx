@@ -26,7 +26,7 @@ export default function AboutPage() {
             <h2 className="font-heading text-2xl font-semibold">The foundation</h2>
             <p className="text-muted-foreground leading-relaxed">
               PA Mentor Studio was created by a PA who has spent years on the
-              other side of the admissions process — as a committee chair
+              other side of the admissions process, as a committee chair
               reviewing applications, contributing to selection decisions, and
               watching what distinguishes candidates who are genuinely prepared
               from those who are simply trying to look that way.
@@ -34,7 +34,7 @@ export default function AboutPage() {
             <p className="text-muted-foreground leading-relaxed">
               More than 3,000 applications reviewed. Multiple admissions cycles.
               A 2025 PAEA Regional Conference speaking engagement. This is the
-              foundation the mentorship is built on — not a general familiarity
+              foundation the mentorship is built on, not a general familiarity
               with the process, but direct, structured experience inside it.
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function AboutPage() {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               PA Mentor Studio was designed around a different model. Mentorship
-              that begins months or years before the application — when there is
+              that begins months or years before the application, when there is
               still time to build clinical experience thoughtfully, develop a
               coherent professional narrative, and approach the process with
               genuine readiness rather than reactive scrambling.
@@ -66,7 +66,7 @@ export default function AboutPage() {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               This work is about helping serious applicants become genuinely
-              stronger candidates — through clearer thinking, better
+              stronger candidates: through clearer thinking, better
               self-awareness, and a more grounded understanding of what PA
               programs are actually looking for.
             </p>
@@ -76,7 +76,7 @@ export default function AboutPage() {
             <h2 className="font-heading text-2xl font-semibold">On selective enrollment</h2>
             <p className="text-muted-foreground leading-relaxed">
               PA Mentor Studio maintains a small, intentionally limited client
-              roster. This is not artificial scarcity — it is a structural
+              roster. This is not artificial scarcity; it is a structural
               requirement of meaningful mentorship. Each client receives
               sustained attention across the full arc of their preparation. That
               is only possible when enrollment remains small.

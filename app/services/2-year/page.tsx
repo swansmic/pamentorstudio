@@ -17,7 +17,7 @@ export default function TwoYearPage() {
       <PageHeader
         label="2-Year Mentorship · $7,000"
         title="Structured development across two intentional years."
-        description="A two-year mentorship arc for applicants who want the time to build thoughtfully — strengthening their clinical experience, developing their professional narrative, and arriving at the application cycle genuinely prepared."
+        description="A two-year mentorship arc for applicants who want the time to build thoughtfully, strengthening their clinical experience, developing their professional narrative, and arriving at the application cycle genuinely prepared."
       />
 
       <ContentSection narrow>
@@ -30,13 +30,13 @@ export default function TwoYearPage() {
               Clinical experience is underway but not complete. The academic
               record is largely established. The central work is building a
               coherent professional narrative and arriving at the application
-              as a genuinely strong candidate — not just a technically
+              as a genuinely strong candidate, not just a technically
               eligible one.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Year One — foundation and development</h2>
+            <h2 className="font-heading text-2xl font-semibold">Year One: Foundation and Development</h2>
             <p className="text-muted-foreground leading-relaxed">
               The first year focuses on understanding your current standing,
               identifying gaps, and building deliberately. Clinical experience
@@ -47,9 +47,9 @@ export default function TwoYearPage() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Year Two — application and candidacy</h2>
+            <h2 className="font-heading text-2xl font-semibold">Year Two: Application and Candidacy</h2>
             <p className="text-muted-foreground leading-relaxed">
-              The second year transitions into application strategy — personal
+              The second year transitions into application strategy: personal
               statement development, school selection, supplemental essays, and
               interview preparation. By the time the application cycle opens,
               you have had a year of mentored preparation behind it. That
@@ -64,7 +64,7 @@ export default function TwoYearPage() {
               <strong className="text-foreground">$7,000</strong>. Pay-in-full
               is preferred. A structured payment plan is available for
               qualified applicants, with all payments completed within the
-              first 12 months of the mentorship — before Year Two begins.
+              first 12 months of the mentorship, before Year Two begins.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Payment structure details are discussed during the enrollment
@@ -76,7 +76,7 @@ export default function TwoYearPage() {
             <h2 className="font-heading text-2xl font-semibold">What this mentorship is not</h2>
             <p className="text-muted-foreground leading-relaxed">
               No application materials are written on your behalf. No outcomes
-              are guaranteed. This is strategic mentorship — the goal is to
+              are guaranteed. This is strategic mentorship; the goal is to
               help you become a stronger candidate, not to manufacture one.
             </p>
           </div>

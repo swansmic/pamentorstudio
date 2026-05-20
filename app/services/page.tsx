@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createMetadata({
   title: "Mentorship Pathways",
   description:
-    "Three structured mentorship pathways for PA school applicants — 1-Year, 2-Year, and 4-Year. Each is a distinct structure suited to a different stage of preparation.",
+    "Three structured mentorship pathways for PA school applicants: 1-Year, 2-Year, and 4-Year. Each is a distinct structure suited to a different stage of preparation.",
   path: "/services",
 });
 
@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageHeader
         label="Mentorship Pathways"
         title="Three structures. One approach to preparation."
-        description="Each pathway is designed for a different stage of the admissions journey. They are not tiers — they are distinct structures. The right fit depends on where you are, not how much you want to invest."
+        description="Each pathway is designed for a different stage of the admissions journey. They are not tiers; they are distinct structures. The right fit depends on where you are, not how much you want to invest."
       />
 
       <ContentSection>
@@ -65,7 +65,7 @@ export default function ServicesPage() {
           <div className="space-y-4 text-muted-foreground">
             <p className="leading-relaxed">
               If you are within 12 months of your intended application cycle and
-              your foundational preparation — GPA, clinical hours, references —
+              your foundational preparation, including GPA, clinical hours, and references,
               is largely in place, the <strong className="text-foreground">1-Year pathway</strong> is likely
               the right fit.
             </p>
@@ -75,9 +75,9 @@ export default function ServicesPage() {
               <strong className="text-foreground">2-Year pathway</strong> provides that structure.
             </p>
             <p className="leading-relaxed">
-              If you are early in your pre-PA journey — still completing
+              If you are early in your pre-PA journey, still completing
               prerequisites, beginning clinical experience, or uncertain about
-              your timeline — the <strong className="text-foreground">4-Year pathway</strong> is designed
+              your timeline, the <strong className="text-foreground">4-Year pathway</strong> is designed
               for sustained, long-horizon mentorship from the ground up.
             </p>
             <p className="leading-relaxed">

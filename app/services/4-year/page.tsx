@@ -17,7 +17,7 @@ export default function FourYearPage() {
       <PageHeader
         label="4-Year Mentorship · $10,000"
         title="Long-horizon mentorship from the earliest stage."
-        description="A four-year mentorship relationship for applicants who are beginning early — still completing prerequisites, building clinical experience, or orienting themselves in the pre-PA landscape — and who want sustained, experienced guidance at every stage of the journey."
+        description="A four-year mentorship relationship for applicants who are beginning early, still completing prerequisites, building clinical experience, or orienting themselves in the pre-PA landscape, and who want sustained, experienced guidance at every stage of the journey."
       />
 
       <ContentSection narrow>
@@ -28,13 +28,13 @@ export default function FourYearPage() {
               The 4-Year pathway is for applicants who are in the early stages
               of their pre-PA path. Prerequisites may be in progress.
               Healthcare experience is beginning. The goal is not yet the
-              application — it is understanding what strong preparation
+              application; it is understanding what strong preparation
               actually looks like and building it thoughtfully, with experienced
               guidance at every turn.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               This pathway is also for applicants who know they want mentorship
-              across the full arc — not just the final sprint — and who value
+              across the full arc, not just the final sprint, and who value
               continuity with a single mentor who knows their complete history.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function FourYearPage() {
               academic and prerequisite strategy, clinical experience
               development, professional narrative formation, and, ultimately,
               the application itself. Each phase informs the next. By the time
-              you apply, your preparation is not reconstructed from memory — it
+              you apply, your preparation is not reconstructed from memory; it
               was built, deliberately, with expert input throughout.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function FourYearPage() {
             <h2 className="font-heading text-2xl font-semibold">Continuity</h2>
             <p className="text-muted-foreground leading-relaxed">
               One of the structural advantages of the 4-Year pathway is
-              continuity. Your mentor knows your complete trajectory — your
+              continuity. Your mentor knows your complete trajectory: your
               challenges, your growth, your reasoning, your voice. That
               accumulated context produces meaningfully different mentorship
               than a relationship that begins six months before the application.
@@ -68,12 +68,12 @@ export default function FourYearPage() {
               The 4-Year pathway is priced at{" "}
               <strong className="text-foreground">$10,000</strong>. Pay-in-full
               is preferred. A structured payment plan is available, with all
-              payments completed within the first 36 months — before Year Four
+              payments completed within the first 36 months, before Year Four
               begins.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               The final year of mentorship is focused entirely on your
-              application — uninterrupted by financial logistics.
+              application, uninterrupted by financial logistics.
             </p>
           </div>
 

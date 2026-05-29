@@ -6,7 +6,7 @@ import { getAllBlogPosts } from "@/lib/mdx";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Blog",
+  title: "Admissions Blog",
   description:
     "Educational writing on PA school admissions, application strategy, and long-horizon preparation from PA Mentor Studio.",
   path: "/blog",

@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 
+const BRAND = "PA Mentor Studio";
+const BASE_URL = "https://pamentorstudio.com";
+const OG_IMAGE = "/api/og";
+
 interface PageMetadataInput {
   title: string;
   description: string;
@@ -13,18 +17,35 @@ export function createMetadata({
   path,
   noIndex = false,
 }: PageMetadataInput): Metadata {
-  const url = `https://pamentorstudio.com${path}`;
+  const url = `${BASE_URL}${path}`;
+  const ogTitle = `${title} | ${BRAND}`;
 
-  return {
+  const base: Metadata = {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, type: "website" },
-    twitter: { card: "summary_large_image", title, description },
-    robots: noIndex
-      ? { index: false, follow: false }
-      : { index: true, follow: true },
+    openGraph: {
+      title: ogTitle,
+      description,
+      url,
+      type: "website",
+      siteName: BRAND,
+      locale: "en_US",
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: ogTitle }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description,
+      images: [OG_IMAGE],
+    },
   };
+
+  if (noIndex) {
+    base.robots = { index: false, follow: false };
+  }
+
+  return base;
 }
 
 export function createBlogMetadata({
@@ -32,25 +53,39 @@ export function createBlogMetadata({
   description,
   slug,
   date,
+  tags = [],
 }: {
   title: string;
   description: string;
   slug: string;
   date: string;
+  tags?: string[];
 }): Metadata {
-  const url = `https://pamentorstudio.com/blog/${slug}`;
+  const url = `${BASE_URL}/blog/${slug}`;
+  const ogTitle = `${title} | ${BRAND}`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {
-      title,
+      title: ogTitle,
       description,
       url,
       type: "article",
       publishedTime: date,
+      siteName: BRAND,
+      locale: "en_US",
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: ogTitle }],
+      authors: [BRAND],
+      section: "PA School Admissions",
+      tags,
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description,
+      images: [OG_IMAGE],
+    },
   };
 }

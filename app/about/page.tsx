@@ -5,7 +5,7 @@ import { CtaSection } from "@/components/sections/cta-section";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "About",
+  title: "About the Mentor",
   description:
     "PA Mentor Studio was founded by an experienced PA school admissions committee chair with a commitment to grounded, ethical, longitudinal mentorship.",
   path: "/about",

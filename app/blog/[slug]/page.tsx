@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.description,
     slug: post.slug,
     date: post.date,
+    tags: post.tags,
   });
 }
 
@@ -39,8 +40,31 @@ export default async function BlogPostPage({ params }: Props) {
 
   if (!post) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    url: `https://pamentorstudio.com/blog/${post.slug}`,
+    author: {
+      "@type": "Organization",
+      name: "PA Mentor Studio",
+      url: "https://pamentorstudio.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "PA Mentor Studio",
+      url: "https://pamentorstudio.com",
+    },
+  };
+
   return (
     <div className="py-12 md:py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-3xl mx-auto px-6">
         {/* Back link */}
         <Link

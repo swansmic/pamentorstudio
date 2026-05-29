@@ -1,10 +1,44 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { servicePathways } from "@/data/services";
 import { CtaSection } from "@/components/sections/cta-section";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createMetadata({
+  title: "PA School Admissions Mentorship",
+  description:
+    "Longitudinal PA school admissions mentorship from an experienced admissions committee chair. Structured guidance for serious applicants.",
+  path: "/",
+});
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://pamentorstudio.com/#organization",
+      name: "PA Mentor Studio",
+      url: "https://pamentorstudio.com",
+      description:
+        "Longitudinal PA school admissions mentorship from an experienced admissions committee chair.",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pamentorstudio.com/#website",
+      url: "https://pamentorstudio.com",
+      name: "PA Mentor Studio",
+      publisher: { "@id": "https://pamentorstudio.com/#organization" },
+    },
+  ],
+};
 
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="py-24 md:py-36 border-b border-border">
         <div className="max-w-6xl mx-auto px-6">

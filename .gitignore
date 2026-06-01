@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# mentor/mentee working documents
+/content/mentorship/
+/tools/

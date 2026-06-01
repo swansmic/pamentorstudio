@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const BRAND = "PA Mentor Studio";
-const BASE_URL = "https://pamentorstudio.com";
+const BASE_URL = "https://www.pamentorstudio.com";
 const OG_IMAGE = "/api/og";
 
 interface PageMetadataInput {

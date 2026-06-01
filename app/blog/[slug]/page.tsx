@@ -46,16 +46,16 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    url: `https://pamentorstudio.com/blog/${post.slug}`,
+    url: `https://www.pamentorstudio.com/blog/${post.slug}`,
     author: {
       "@type": "Organization",
       name: "PA Mentor Studio",
-      url: "https://pamentorstudio.com",
+      url: "https://www.pamentorstudio.com",
     },
     publisher: {
       "@type": "Organization",
       name: "PA Mentor Studio",
-      url: "https://pamentorstudio.com",
+      url: "https://www.pamentorstudio.com",
     },
   };
 

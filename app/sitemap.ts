@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "@/lib/mdx";
 
-const BASE_URL = "https://pamentorstudio.com";
+const BASE_URL = "https://www.pamentorstudio.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

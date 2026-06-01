@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pamentorstudio.com/sitemap.xml
+Sitemap: https://www.pamentorstudio.com/sitemap.xml

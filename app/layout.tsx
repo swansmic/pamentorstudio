@@ -19,7 +19,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pamentorstudio.com"),
+  metadataBase: new URL("https://www.pamentorstudio.com"),
   title: {
     default: "PA Mentor Studio: Strategic PA School Admissions Mentorship",
     template: "%s | PA Mentor Studio",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://pamentorstudio.com",
+    url: "https://www.pamentorstudio.com",
     siteName: "PA Mentor Studio",
     title: "PA Mentor Studio: Strategic PA School Admissions Mentorship",
     description:

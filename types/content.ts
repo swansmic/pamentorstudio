@@ -27,4 +27,5 @@ export interface ServicePathway {
   tagline: string;
   description: string;
   href: string;
+  cadence: string[];
 }

@@ -45,9 +45,19 @@ export default function ServicesPage() {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-3 italic">
                   {pathway.tagline}
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-4">
                   {pathway.description}
                 </p>
+                <div className="flex flex-col gap-1">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    Meeting structure
+                  </p>
+                  {pathway.cadence.map((line) => (
+                    <p key={line} className="text-sm text-muted-foreground">
+                      {line}
+                    </p>
+                  ))}
+                </div>
               </div>
               <div className="md:self-center shrink-0">
                 <span className="text-sm text-primary group-hover:underline underline-offset-2">

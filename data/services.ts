@@ -10,6 +10,7 @@ export const servicePathways: ServicePathway[] = [
     description:
       "Strategic, intensive mentorship for applicants who are ready to apply and need focused, expert support to present their strongest possible candidacy.",
     href: "/services/1-year",
+    cadence: ["Monthly sessions, 1 hour each"],
   },
   {
     slug: "2-year",
@@ -20,6 +21,7 @@ export const servicePathways: ServicePathway[] = [
     description:
       "A structured two-year developmental arc for applicants who want time to build their clinical foundation, refine their narrative, and apply with confidence.",
     href: "/services/2-year",
+    cadence: ["Monthly sessions, 1 hour each"],
   },
   {
     slug: "4-year",
@@ -30,5 +32,9 @@ export const servicePathways: ServicePathway[] = [
     description:
       "A comprehensive four-year mentorship relationship for applicants who are beginning early and want sustained, experienced guidance at every stage of their journey.",
     href: "/services/4-year",
+    cadence: [
+      "Years 1–2: every other month, 1 hour per session",
+      "Years 3–4: monthly, 1 hour per session",
+    ],
   },
 ];

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { RegisterForm } from "./register-form";
+import { MasterclassPageView } from "./pixel-events";
 
 export const metadata: Metadata = {
   title: "What Admissions Committees Really Look For | Free Masterclass",
@@ -130,6 +131,8 @@ function RegistrationCard({ id }: { id: string }) {
 export default function MasterclassPage() {
   return (
     <>
+      <MasterclassPageView />
+
       {/* ─── HERO ─── */}
       <section className="py-20 md:py-32 border-b border-border">
         <div className="max-w-6xl mx-auto px-6">

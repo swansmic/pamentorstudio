@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { pixelLead } from "@/lib/meta-pixel";
 
 type Status = "idle" | "submitting" | "error";
 
@@ -24,6 +25,12 @@ export function RegisterForm({ id }: { id: string }) {
       });
 
       if (res.ok) {
+        pixelLead();
+        try {
+          localStorage.setItem("pams_registered_at", new Date().toISOString());
+        } catch {
+          // localStorage may be unavailable (private browsing, etc.)
+        }
         router.push("/masterclass/watch");
       } else {
         setStatus("error");

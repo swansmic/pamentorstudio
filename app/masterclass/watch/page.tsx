@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { WatchPageEvents, ApplyButton } from "./watch-client";
 
 export const metadata: Metadata = {
   title: "Watch the Masterclass | PA Mentor Studio",
@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 export default function MasterclassWatchPage() {
   return (
     <>
+      <WatchPageEvents />
+
       {/* ─── VIDEO ─── */}
       <section className="py-20 md:py-28 border-b border-border">
         <div className="max-w-4xl mx-auto px-6">
@@ -80,12 +82,7 @@ export default function MasterclassWatchPage() {
             by someone who has reviewed more than 3,000 applications and sat on
             the other side of the table.
           </p>
-          <Link
-            href="/apply"
-            className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground text-sm font-semibold rounded hover:bg-primary/90 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
-          >
-            Apply for Mentorship
-          </Link>
+          <ApplyButton />
           <p className="text-xs text-muted-foreground mt-5">
             Applications are reviewed individually. Enrollment is limited by
             design.

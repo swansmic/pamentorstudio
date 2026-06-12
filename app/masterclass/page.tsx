@@ -296,7 +296,7 @@ export default function MasterclassPage() {
           <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-12 items-start">
             <div className="max-w-[240px]">
               <Image
-                src="/images/michelle-strange.jpg"
+                src="/images/michelle.jpg"
                 alt="Michelle Strange, DMSc, PA-C, RDCS, founder of PA Mentor Studio"
                 width={480}
                 height={640}

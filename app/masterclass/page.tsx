@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { RegisterForm } from "./register-form";
 
 export const metadata: Metadata = {
   title: "What Admissions Committees Really Look For | Free Masterclass",
   description:
-    "Discover the seven mistakes that cause qualified PA applicants to get overlooked. Free masterclass from Michelle Strange, DMSc, PA-C, RDCS — admissions chair and reviewer of 3,000+ PA applications.",
+    "Discover the seven mistakes that cause qualified PA applicants to get overlooked. Free masterclass from Michelle Strange, DMSc, PA-C, RDCS, admissions chair and reviewer of 3,000+ PA applications.",
   robots: { index: true, follow: true },
   openGraph: {
     title: "What Admissions Committees Really Look For | Free Masterclass",
@@ -18,12 +19,12 @@ const learnItems = [
   {
     number: "01",
     heading: "What Admissions Committees Actually Evaluate",
-    body: "The criteria programs use to assess candidates are not always what applicants assume. This training reveals what reviewers are actually looking for — and how those criteria are applied.",
+    body: "The criteria programs use to assess candidates are not always what applicants assume. This training reveals what reviewers are actually looking for, and how those criteria are applied.",
   },
   {
     number: "02",
     heading: "The Biggest Admissions Myths",
-    body: "Several widely accepted beliefs about PA admissions are incorrect — and acting on them can quietly weaken an otherwise strong application.",
+    body: "Several widely accepted beliefs about PA admissions are incorrect, and acting on them can quietly weaken an otherwise strong application.",
   },
   {
     number: "03",
@@ -38,7 +39,7 @@ const learnItems = [
   {
     number: "05",
     heading: "How Successful Applicants Differentiate Themselves",
-    body: "What separates applicants who stand out from those who blend in — and how to build genuine distinction before you ever write a word of your application.",
+    body: "What separates applicants who stand out from those who blend in, and how to build genuine distinction before you ever write a word of your application.",
   },
   {
     number: "06",
@@ -52,19 +53,19 @@ const mistakes = [
     number: "01",
     title: "Chasing Hours Instead of Purpose",
     teaser:
-      "Logging hours is not the same as building a clinical story. Admissions committees are not counting — they are reading for depth, intention, and genuine engagement with patient care. High hour counts without meaningful reflection rarely stand out.",
+      "Logging hours is not the same as building a clinical story. Admissions committees are not counting. They are reading for depth, intention, and genuine engagement with patient care. High hour counts without meaningful reflection rarely stand out.",
   },
   {
     number: "02",
     title: "Treating Experiences Like Checkboxes",
     teaser:
-      "Many applicants list experiences as credentials rather than as evidence of growth. How you reflect on what you have done — and what it taught you — matters more than the experiences themselves.",
+      "Many applicants list experiences as credentials rather than as evidence of growth. How you reflect on what you have done, and what it taught you, matters more than the experiences themselves.",
   },
   {
     number: "03",
     title: "Weak Personal Statements",
     teaser:
-      "The personal statement is not a resume summary. Most applicants underuse this space — producing a narrative that is technically complete but strategically flat, missing the opportunity to make a lasting impression.",
+      "The personal statement is not a resume summary. Most applicants underuse this space, producing a narrative that is technically complete but strategically flat, missing the opportunity to make a lasting impression.",
   },
   {
     number: "04",
@@ -82,13 +83,13 @@ const mistakes = [
     number: "06",
     title: "Generic Interview Preparation",
     teaser:
-      "Most interview prep focuses on memorizing answers. Strong candidates understand the conversation committees are actually trying to have — and show up differently because of it.",
+      "Most interview prep focuses on memorizing answers. Strong candidates understand the conversation committees are actually trying to have, and show up differently because of it.",
   },
   {
     number: "07",
     title: "Trying To Figure Everything Out Alone",
     teaser:
-      "The information freely available online is incomplete, often contradictory, and rarely reflects what programs actually value. Navigating this process without expert guidance is the most common — and most costly — mistake.",
+      "The information freely available online is incomplete, often contradictory, and rarely reflects what programs actually value. Navigating this process without expert guidance is the most common and most costly mistake.",
   },
 ];
 
@@ -104,12 +105,12 @@ const faqItems = [
   {
     question: "Will this help if I'm not applying this year?",
     answer:
-      "Yes. The earlier you understand how the admissions process works, the more strategically you can build your application. Much of what is covered applies to students who are one to three years away from applying — and some of it is most valuable when applied early.",
+      "Yes. The earlier you understand how the admissions process works, the more strategically you can build your application. Much of what is covered applies to students who are one to three years away from applying, and some of it is most valuable when applied early.",
   },
   {
     question: "Does this guarantee admission?",
     answer:
-      "No. Nothing can guarantee admission to PA school. This training is designed to help you understand the process more clearly, make better decisions, and build an application with purpose — which meaningfully improves your candidacy.",
+      "No. Nothing can guarantee admission to PA school. This training is designed to help you understand the process more clearly, make better decisions, and build an application with purpose, which meaningfully improves your candidacy.",
   },
 ];
 
@@ -143,7 +144,7 @@ export default function MasterclassPage() {
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
                 Discover the seven mistakes that cause qualified PA applicants to
-                get overlooked — and learn what admissions committees actually
+                get overlooked, and learn what admissions committees actually
                 evaluate when making interview and admission decisions.
               </p>
               <div className="border-l-2 border-accent pl-5">
@@ -245,7 +246,7 @@ export default function MasterclassPage() {
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl leading-relaxed">
               These patterns appear repeatedly across applications. Recognizing
-              them — and understanding why they matter — is the first step to
+              them, and understanding why they matter, is the first step to
               avoiding them.
             </p>
           </div>
@@ -276,7 +277,7 @@ export default function MasterclassPage() {
           {/* Mid-page CTA nudge */}
           <div className="mt-12 text-center">
             <p className="text-muted-foreground mb-6 max-w-lg mx-auto leading-relaxed">
-              The full training walks through each of these mistakes in detail —
+              The full training walks through each of these mistakes in detail,
               and what to do instead.
             </p>
             <a
@@ -293,15 +294,15 @@ export default function MasterclassPage() {
       <section className="py-20 md:py-28 border-b border-border">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-12 items-start">
-            {/* Headshot placeholder */}
             <div className="max-w-[240px]">
-              <div className="aspect-[3/4] w-full rounded border border-border bg-muted flex flex-col items-center justify-end overflow-hidden">
-                <div className="bg-secondary/70 w-full py-4 px-3 text-center border-t border-border">
-                  <p className="text-xs text-muted-foreground font-medium leading-snug">
-                    Professional headshot
-                  </p>
-                </div>
-              </div>
+              <Image
+                src="/images/michelle-strange.jpg"
+                alt="Michelle Strange, DMSc, PA-C, RDCS, founder of PA Mentor Studio"
+                width={480}
+                height={640}
+                className="w-full h-auto rounded"
+                priority
+              />
             </div>
 
             <div>
@@ -323,7 +324,7 @@ export default function MasterclassPage() {
                   After reviewing more than 3,000 PA school applications and
                   participating in admissions decisions, Michelle has seen
                   firsthand why some applicants stand out while others are
-                  overlooked — and it rarely comes down to what most students
+                  overlooked, and it rarely comes down to what most students
                   assume.
                 </p>
                 <p>
@@ -373,8 +374,8 @@ export default function MasterclassPage() {
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 This masterclass is designed for students who are serious about
-                the admissions process and want to understand it from the inside
-                — not just collect generic advice from forums and Reddit threads.
+                the admissions process and want to understand it from the inside,
+                not just collect generic advice from forums and message boards.
               </p>
             </div>
 
@@ -382,7 +383,7 @@ export default function MasterclassPage() {
               {[
                 {
                   label: "Future PA applicants",
-                  desc: "Students in the early stages of their pre-PA path who want to build intentionally from the start — before habits form.",
+                  desc: "Students in the early stages of their pre-PA path who want to build intentionally from the start, before habits form.",
                 },
                 {
                   label: "Current applicants",
@@ -390,15 +391,15 @@ export default function MasterclassPage() {
                 },
                 {
                   label: "Reapplicants",
-                  desc: "Students who have applied before and want to understand what may have missed the mark — and how to approach the next cycle differently.",
+                  desc: "Students who have applied before and want to understand what may have missed the mark, and how to approach the next cycle differently.",
                 },
                 {
                   label: "Career changers",
-                  desc: "Professionals transitioning to the PA profession who want to understand how their background translates — and where the gaps are.",
+                  desc: "Professionals transitioning to the PA profession who want to understand how their background translates, and where the gaps are.",
                 },
                 {
                   label: "Students seeking insider perspective",
-                  desc: "Anyone who wants admissions guidance from someone who has actually participated in the decisions — not someone who has only applied themselves.",
+                  desc: "Anyone who wants admissions guidance from someone who has actually participated in the decisions, not someone who has only applied themselves.",
                 },
               ].map((item) => (
                 <li key={item.label} className="flex gap-4 items-start">
@@ -430,7 +431,7 @@ export default function MasterclassPage() {
                 Guesswork
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-                Learn what admissions committees actually look for — and how
+                Learn what admissions committees actually look for, and how
                 successful applicants position themselves for success.
               </p>
               <ul className="space-y-3">

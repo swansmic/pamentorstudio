@@ -4,7 +4,7 @@ import { WatchPageEvents, ApplyButton } from "./watch-client";
 export const metadata: Metadata = {
   title: "Watch the Masterclass | PA Mentor Studio",
   description:
-    "What Admissions Committees Really Look For — insights from reviewing 3,000+ PA school applications.",
+    "What Admissions Committees Really Look For: insights from reviewing 3,000+ PA school applications.",
   robots: { index: false, follow: false },
 };
 
@@ -78,7 +78,7 @@ export default function MasterclassWatchPage() {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl mx-auto">
             Applications for PA Mentor Studio are now open. Work with Michelle
-            directly to build your application with purpose and strategy — guided
+            directly to build your application with purpose and strategy, guided
             by someone who has reviewed more than 3,000 applications and sat on
             the other side of the table.
           </p>

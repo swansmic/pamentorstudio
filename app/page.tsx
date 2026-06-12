@@ -131,7 +131,17 @@ export default function HomePage() {
       {/* Credibility */}
       <section className="py-20 md:py-28 border-b border-border bg-muted/40">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-12 items-start">
+            <div className="max-w-[240px]">
+              <Image
+                src="/images/michelle.jpg"
+                alt="Michelle Strange, DMSc, PA-C, RDCS"
+                width={480}
+                height={640}
+                className="w-full h-auto rounded"
+              />
+            </div>
+
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-5">
                 About the Mentor
@@ -156,39 +166,30 @@ export default function HomePage() {
               >
                 More about the founder
               </Link>
-            </div>
 
-            <div className="space-y-6">
-              <div className="max-w-[200px]">
-                <Image
-                  src="/images/michelle.jpg"
-                  alt="Michelle Strange, DMSc, PA-C, RDCS"
-                  width={400}
-                  height={534}
-                  className="w-full h-auto rounded"
-                />
+              <div className="mt-10 space-y-6">
+                {[
+                  {
+                    stat: "3,000+",
+                    label:
+                      "PA school applications reviewed as an admissions committee chair",
+                  },
+                  {
+                    stat: "Longitudinal",
+                    label:
+                      "Mentorship across 1, 2, and 4-year structures, not one-time reviews",
+                  },
+                ].map((item) => (
+                  <div key={item.stat} className="border-l-2 border-accent pl-6">
+                    <p className="font-heading text-2xl font-semibold text-foreground mb-1">
+                      {item.stat}
+                    </p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {item.label}
+                    </p>
+                  </div>
+                ))}
               </div>
-              {[
-                {
-                  stat: "3,000+",
-                  label:
-                    "PA school applications reviewed as an admissions committee chair",
-                },
-                {
-                  stat: "Longitudinal",
-                  label:
-                    "Mentorship across 1, 2, and 4-year structures, not one-time reviews",
-                },
-              ].map((item) => (
-                <div key={item.stat} className="border-l-2 border-accent pl-6">
-                  <p className="font-heading text-2xl font-semibold text-foreground mb-1">
-                    {item.stat}
-                  </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
             </div>
           </div>
         </div>

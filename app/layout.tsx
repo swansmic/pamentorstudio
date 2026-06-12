@@ -3,6 +3,7 @@ import { Inter, Lora } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { MetaPixelScript } from "@/components/meta-pixel-script";
 import "./globals.css";
 
 const inter = Inter({
@@ -64,6 +65,7 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <Analytics />
+        <MetaPixelScript />
       </body>
     </html>
   );

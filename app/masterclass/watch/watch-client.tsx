@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { pixelPageView, pixelWebinarView, pixelApplyClick } from "@/lib/meta-pixel";
+import { pixelWebinarView, pixelApplyClick } from "@/lib/meta-pixel";
 
 const REGISTERED_FLAG = "pams_registered_at";
 
@@ -13,7 +13,6 @@ export function WatchPageEvents() {
     if (fired.current) return;
     fired.current = true;
 
-    pixelPageView();
     pixelWebinarView();
 
     // Bonus: detect Registration → Watch conversion without backend infrastructure.

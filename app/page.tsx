@@ -133,15 +133,6 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div>
-              <div className="mb-8 max-w-[200px]">
-                <Image
-                  src="/images/michelle.jpg"
-                  alt="Michelle Strange, DMSc, PA-C, RDCS"
-                  width={400}
-                  height={534}
-                  className="w-full h-auto rounded"
-                />
-              </div>
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-5">
                 About the Mentor
               </p>
@@ -168,6 +159,15 @@ export default function HomePage() {
             </div>
 
             <div className="space-y-6">
+              <div className="max-w-[200px]">
+                <Image
+                  src="/images/michelle.jpg"
+                  alt="Michelle Strange, DMSc, PA-C, RDCS"
+                  width={400}
+                  height={534}
+                  className="w-full h-auto rounded"
+                />
+              </div>
               {[
                 {
                   stat: "3,000+",

@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/services/4-year`,
+      url: `${BASE_URL}/services/3-year`,
       changeFrequency: "monthly",
       priority: 0.8,
     },

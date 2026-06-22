@@ -24,17 +24,14 @@ export const servicePathways: ServicePathway[] = [
     cadence: ["Monthly sessions, 1 hour each"],
   },
   {
-    slug: "4-year",
-    name: "4-Year Mentorship",
-    duration: "48 months",
+    slug: "3-year",
+    name: "3-Year Mentorship",
+    duration: "36 months",
     investment: "$10,000",
     tagline: "Long-horizon mentorship beginning from the earliest stages of aspiration.",
     description:
-      "A comprehensive four-year mentorship relationship for applicants who are beginning early and want sustained, experienced guidance at every stage of their journey.",
-    href: "/services/4-year",
-    cadence: [
-      "Years 1–2: every other month, 1 hour per session",
-      "Years 3–4: monthly, 1 hour per session",
-    ],
+      "A comprehensive three-year mentorship relationship for applicants who are beginning early and want sustained, experienced guidance at every stage of their journey.",
+    href: "/services/3-year",
+    cadence: ["Monthly sessions, 1 hour each"],
   },
 ];

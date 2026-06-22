@@ -5,19 +5,19 @@ import { CtaSection } from "@/components/sections/cta-section";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "4-Year Mentorship",
+  title: "3-Year Mentorship",
   description:
-    "Long-horizon 48-month mentorship for PA school applicants beginning from the earliest stages. Sustained, experienced guidance at every stage of the journey. $10,000.",
-  path: "/services/4-year",
+    "Long-horizon 36-month mentorship for PA school applicants beginning early. One hour of sustained, experienced guidance every month from orientation through application. $10,000.",
+  path: "/services/3-year",
 });
 
-export default function FourYearPage() {
+export default function ThreeYearPage() {
   return (
     <>
       <PageHeader
-        label="4-Year Mentorship · $10,000"
+        label="3-Year Mentorship · $10,000"
         title="Long-horizon mentorship from the earliest stage."
-        description="A four-year mentorship relationship for applicants who are beginning early, still completing prerequisites, building clinical experience, or orienting themselves in the pre-PA landscape, and who want sustained, experienced guidance at every stage of the journey."
+        description="A three-year mentorship relationship for applicants who are beginning early, still completing prerequisites, building clinical experience, or orienting themselves in the pre-PA landscape, and who want sustained, experienced guidance at every stage of the journey."
       />
 
       <ContentSection narrow>
@@ -25,7 +25,7 @@ export default function FourYearPage() {
           <div className="space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Who this pathway serves</h2>
             <p className="text-muted-foreground leading-relaxed">
-              The 4-Year pathway is for applicants who are in the early stages
+              The 3-Year pathway is for applicants who are in the early stages
               of their pre-PA path. Prerequisites may be in progress.
               Healthcare experience is beginning. The goal is not yet the
               application; it is understanding what strong preparation
@@ -40,9 +40,9 @@ export default function FourYearPage() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">What four years makes possible</h2>
+            <h2 className="font-heading text-2xl font-semibold">What three years makes possible</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Over four years, the mentorship moves through distinct phases:
+              Over three years, the mentorship moves through distinct phases:
               academic and prerequisite strategy, clinical experience
               development, professional narrative formation, and, ultimately,
               the application itself. Each phase informs the next. By the time
@@ -52,9 +52,24 @@ export default function FourYearPage() {
           </div>
 
           <div className="space-y-4">
+            <h2 className="font-heading text-2xl font-semibold">Meeting structure</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Sessions are held once per month for one hour throughout all
+              three years. That consistent rhythm creates genuine continuity:
+              each meeting builds on the last, and nothing gets lost between
+              conversations.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Over 36 months, this amounts to 36 hours of live mentorship,
+              structured around your actual development rather than a
+              fixed curriculum.
+            </p>
+          </div>
+
+          <div className="space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Continuity</h2>
             <p className="text-muted-foreground leading-relaxed">
-              One of the structural advantages of the 4-Year pathway is
+              One of the structural advantages of the 3-Year pathway is
               continuity. Your mentor knows your complete trajectory: your
               challenges, your growth, your reasoning, your voice. That
               accumulated context produces meaningfully different mentorship
@@ -65,10 +80,10 @@ export default function FourYearPage() {
           <div className="space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Investment and payment</h2>
             <p className="text-muted-foreground leading-relaxed">
-              The 4-Year pathway is priced at{" "}
+              The 3-Year pathway is priced at{" "}
               <strong className="text-foreground">$10,000</strong>. Pay-in-full
               is preferred. A structured payment plan is available, with all
-              payments completed within the first 36 months, before Year Four
+              payments completed within the first 24 months, before Year Three
               begins.
             </p>
             <p className="text-muted-foreground leading-relaxed">
@@ -80,11 +95,12 @@ export default function FourYearPage() {
           <div className="space-y-4">
             <h2 className="font-heading text-2xl font-semibold">What this mentorship is not</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Four years of mentorship does not mean four years of intensive
-              weekly sessions. The rhythm adjusts to your stage. In early years,
-              sessions may be less frequent and more reflective. In the
-              application year, more intensive. The structure is responsive, not
-              rigid.
+              Three years of mentorship does not mean three years of intensive
+              weekly sessions. The rhythm is consistent monthly one-hour meetings,
+              but what each session focuses on adjusts to your stage. In the early
+              years, sessions are more exploratory and developmental. In the
+              application year, more intensive and execution-focused. The
+              structure is responsive, not rigid.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               No application materials are written on your behalf. No outcomes

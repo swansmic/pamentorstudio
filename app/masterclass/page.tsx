@@ -439,7 +439,7 @@ export default function MasterclassPage() {
                   "Free masterclass. No credit card required.",
                   "Approximately 35–45 minutes.",
                   "Taught by an admissions chair and reviewer of 3,000+ applications.",
-                  "Applicable whether you are 1 year or 4 years from applying.",
+                  "Applicable whether you are 1 year or 3 years from applying.",
                 ].map((point) => (
                   <li key={point} className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />

@@ -45,12 +45,12 @@ const faqSections: FaqSection[] = [
       {
         question: "How do I know which pathway is right for me?",
         answer:
-          "The right pathway depends on where you are in your preparation and how much time you have before your intended application cycle. If you are within 12 months of applying and your foundational preparation is in place, the 1-Year pathway is likely appropriate. If you have 2 years, the 2-Year pathway provides structured development time. If you are early in your pre-PA journey, still completing prerequisites or beginning clinical experience, the 4-Year pathway is designed for that stage. If you are uncertain, the consultation process is the right place to explore this.",
+          "The right pathway depends on where you are in your preparation and how much time you have before your intended application cycle. If you are within 12 months of applying and your foundational preparation is in place, the 1-Year pathway is likely appropriate. If you have 2 years, the 2-Year pathway provides structured development time. If you are early in your pre-PA journey, still completing prerequisites or beginning clinical experience, the 3-Year pathway is designed for that stage. If you are uncertain, the consultation process is the right place to explore this.",
       },
       {
         question: "Are the pathways tiered, like good, better, best?",
         answer:
-          "No. The pathways are distinct structures suited to different stages of preparation, not quality tiers. The 4-Year pathway is not better than the 1-Year pathway; it is different. It is designed for applicants who are earlier in their journey and who will benefit from sustained mentorship across a longer horizon. Choosing the right pathway is about fit, not budget.",
+          "No. The pathways are distinct structures suited to different stages of preparation, not quality tiers. The 3-Year pathway is not better than the 1-Year pathway; it is different. It is designed for applicants who are earlier in their journey and who will benefit from sustained mentorship across a longer horizon. Choosing the right pathway is about fit, not budget.",
       },
       {
         question: "What if I am not sure I am ready to apply this cycle?",
@@ -85,7 +85,7 @@ const faqSections: FaqSection[] = [
       {
         question: "What are the payment options for each pathway?",
         answer:
-          "The 1-Year pathway ($5,000) is paid in full at enrollment; no payment plans are available. The 2-Year ($7,000) and 4-Year ($10,000) pathways offer payment plans for qualified applicants. For the 2-Year pathway, all payments are completed within the first 12 months. For the 4-Year pathway, within the first 36 months. Pay-in-full is preferred for both. Payment plan details are discussed during the enrollment conversation.",
+          "The 1-Year pathway ($5,000) is paid in full at enrollment; no payment plans are available. The 2-Year ($7,000) and 3-Year ($10,000) pathways offer payment plans for qualified applicants. For the 2-Year pathway, all payments are completed within the first 12 months. For the 3-Year pathway, within the first 24 months. Pay-in-full is preferred for both. Payment plan details are discussed during the enrollment conversation.",
       },
       {
         question: "What is the refund policy?",
@@ -95,7 +95,7 @@ const faqSections: FaqSection[] = [
       {
         question: "Is financial assistance available?",
         answer:
-          "PA Mentor Studio does not offer scholarships, sliding-scale pricing, or needs-based discounts at this time. The payment plan options for the 2-Year and 4-Year pathways are designed to provide some flexibility for qualified applicants.",
+          "PA Mentor Studio does not offer scholarships, sliding-scale pricing, or needs-based discounts at this time. The payment plan options for the 2-Year and 3-Year pathways are designed to provide some flexibility for qualified applicants.",
       },
     ],
   },

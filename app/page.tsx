@@ -177,7 +177,7 @@ export default function HomePage() {
                   {
                     stat: "Longitudinal",
                     label:
-                      "Mentorship across 1, 2, and 4-year structures, not one-time reviews",
+                      "Mentorship across 1, 2, and 3-year structures, not one-time reviews",
                   },
                 ].map((item) => (
                   <div key={item.stat} className="border-l-2 border-accent pl-6">

@@ -137,7 +137,7 @@ export function ApplyForm() {
           </option>
           <option value="1-year">1-Year Mentorship ($5,000)</option>
           <option value="2-year">2-Year Mentorship ($7,000)</option>
-          <option value="4-year">4-Year Mentorship ($10,000)</option>
+          <option value="3-year">3-Year Mentorship ($10,000)</option>
           <option value="unsure">Unsure: I would like guidance</option>
         </select>
       </div>

@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createMetadata({
   title: "Mentorship Pathways",
   description:
-    "Three structured mentorship pathways for PA school applicants: 1-Year, 2-Year, and 4-Year. Each is a distinct structure suited to a different stage of preparation.",
+    "Three structured mentorship pathways for PA school applicants: 1-Year, 2-Year, and 3-Year. Each is a distinct structure suited to a different stage of preparation.",
   path: "/services",
 });
 
@@ -87,7 +87,7 @@ export default function ServicesPage() {
             <p className="leading-relaxed">
               If you are early in your pre-PA journey, still completing
               prerequisites, beginning clinical experience, or uncertain about
-              your timeline, the <strong className="text-foreground">4-Year pathway</strong> is designed
+              your timeline, the <strong className="text-foreground">3-Year pathway</strong> is designed
               for sustained, long-horizon mentorship from the ground up.
             </p>
             <p className="leading-relaxed">

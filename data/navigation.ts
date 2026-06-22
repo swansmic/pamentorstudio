@@ -7,7 +7,7 @@ export const navItems: NavItem[] = [
     children: [
       { label: "1-Year Mentorship", href: "/services/1-year" },
       { label: "2-Year Mentorship", href: "/services/2-year" },
-      { label: "4-Year Mentorship", href: "/services/4-year" },
+      { label: "3-Year Mentorship", href: "/services/3-year" },
     ],
   },
   { label: "About", href: "/about" },
@@ -19,7 +19,7 @@ export const footerLinks = {
   services: [
     { label: "1-Year Mentorship", href: "/services/1-year" },
     { label: "2-Year Mentorship", href: "/services/2-year" },
-    { label: "4-Year Mentorship", href: "/services/4-year" },
+    { label: "3-Year Mentorship", href: "/services/3-year" },
     { label: "Services Overview", href: "/services" },
   ],
   resources: [

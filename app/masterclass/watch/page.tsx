@@ -26,38 +26,16 @@ export default function MasterclassWatchPage() {
             Insights From Reviewing 3,000+ PA School Applications
           </p>
 
-          {/* Video embed — replace src with actual embed URL when ready */}
-          <div className="aspect-video w-full rounded border border-border bg-muted overflow-hidden">
-            {/* Uncomment and replace with your embed URL when the video is ready:
-            <iframe
-              src="https://player.vimeo.com/video/YOUR_VIDEO_ID?autoplay=0"
+          <div className="aspect-video w-full rounded border border-border bg-black overflow-hidden">
+            <video
               className="w-full h-full"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
+              controls
+              preload="metadata"
               title="What Admissions Committees Really Look For"
-            />
-            */}
-            <div className="w-full h-full flex flex-col items-center justify-center gap-6 p-8 text-center">
-              <div className="w-20 h-20 rounded-full border-2 border-border bg-card flex items-center justify-center">
-                <div
-                  className="ml-1.5 w-0 h-0"
-                  style={{
-                    borderTop: "12px solid transparent",
-                    borderBottom: "12px solid transparent",
-                    borderLeft: "20px solid var(--foreground)",
-                  }}
-                />
-              </div>
-              <div>
-                <p className="font-heading text-xl font-semibold text-foreground mb-2">
-                  Training Video Coming Soon
-                </p>
-                <p className="text-sm text-muted-foreground max-w-sm mx-auto leading-relaxed">
-                  Your spot is reserved. You will receive an email when the
-                  training is available.
-                </p>
-              </div>
-            </div>
+            >
+              <source src="/PA Admissions Training Slide Deck 2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <p className="text-sm text-muted-foreground mt-6 text-center">

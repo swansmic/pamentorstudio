@@ -95,10 +95,6 @@ const mistakes = [
 
 const faqItems = [
   {
-    question: "How long is the training?",
-    answer: "Approximately 35–45 minutes.",
-  },
-  {
     question: "Is this training free?",
     answer: "Yes. There is no cost and no credit card required.",
   },
@@ -437,7 +433,6 @@ export default function MasterclassPage() {
               <ul className="space-y-3">
                 {[
                   "Free masterclass. No credit card required.",
-                  "Approximately 35–45 minutes.",
                   "Taught by an admissions chair and reviewer of 3,000+ applications.",
                   "Applicable whether you are 1 year or 3 years from applying.",
                 ].map((point) => (

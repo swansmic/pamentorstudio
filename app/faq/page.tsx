@@ -105,7 +105,7 @@ const faqSections: FaqSection[] = [
       {
         question: "How often do we meet?",
         answer:
-          "Session frequency varies by pathway and stage of preparation. In general, sessions are structured around what is most useful at each point in your process, more frequent during active application periods and less frequent in developmental phases. The specifics are established during onboarding and adjusted as needed.",
+          "Sessions are held once per month for one hour. This rhythm applies across all three years of the mentorship. The focus of each session shifts with your stage of preparation, but the meeting structure stays consistent throughout.",
       },
       {
         question: "Is the mentorship conducted virtually?",

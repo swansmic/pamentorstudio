@@ -192,9 +192,6 @@ export default function HomePage() {
               <p className="text-muted-foreground leading-relaxed mb-4">
                 PA Mentor Studio was created to provide applicants with mentorship grounded in firsthand experience. Rather than focusing on shortcuts or application &ldquo;hacks,&rdquo; Dr. Strange helps applicants understand how admissions committees evaluate academic preparation, clinical experiences, professionalism, leadership, service, and personal growth, empowering them to build authentic, competitive applications.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Her mission is simple: to help aspiring physician associates become stronger applicants by making informed, strategic decisions throughout every stage of the admissions journey.
-              </p>
               <Link
                 href="/about"
                 className="text-sm text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"

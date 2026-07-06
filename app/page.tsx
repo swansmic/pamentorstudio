@@ -140,6 +140,37 @@ export default function HomePage() {
                 height={640}
                 className="w-full h-auto rounded"
               />
+              <div className="mt-8 space-y-6">
+                {[
+                  {
+                    stat: "3,000+",
+                    label:
+                      "PA school applications reviewed as an admissions committee chair",
+                  },
+                  {
+                    stat: "PA Educator",
+                    label: "Since 2019",
+                  },
+                  {
+                    stat: "PAEA Speaker",
+                    label: "Presented on admissions factors at the PAEA Regional Meeting",
+                  },
+                  {
+                    stat: "Longitudinal",
+                    label:
+                      "Mentorship across 1, 2, and 3-year structures, not one-time reviews",
+                  },
+                ].map((item) => (
+                  <div key={item.stat} className="border-l-2 border-accent pl-4">
+                    <p className="font-heading text-lg font-semibold text-foreground mb-1">
+                      {item.stat}
+                    </p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      {item.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div>
@@ -171,29 +202,6 @@ export default function HomePage() {
                 More about the founder
               </Link>
 
-              <div className="mt-10 space-y-6">
-                {[
-                  {
-                    stat: "3,000+",
-                    label:
-                      "PA school applications reviewed as an admissions committee chair",
-                  },
-                  {
-                    stat: "Longitudinal",
-                    label:
-                      "Mentorship across 1, 2, and 3-year structures, not one-time reviews",
-                  },
-                ].map((item) => (
-                  <div key={item.stat} className="border-l-2 border-accent pl-6">
-                    <p className="font-heading text-2xl font-semibold text-foreground mb-1">
-                      {item.stat}
-                    </p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {item.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

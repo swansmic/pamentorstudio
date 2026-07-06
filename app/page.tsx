@@ -144,21 +144,25 @@ export default function HomePage() {
 
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-5">
-                About the Mentor
+                Meet Dr. Michelle Strange
               </p>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground leading-tight mb-6">
                 Insight earned from the inside.
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                The mentorship offered through PA Mentor Studio is grounded in
-                direct admissions committee experience, including reviewing
-                more than 3,000 PA school applications and contributing to
-                admissions selection decisions across multiple cycles.
+                Dr. Michelle Strange, DMSc, PA-C, RDCS (AE)(PE) is a board-certified Physician Assistant, educator, and admissions leader dedicated to helping future PAs navigate the admissions process with clarity and confidence.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                With clinical experience in cardiology and a career in physician assistant education since 2019, Dr. Strange brings a unique perspective that bridges clinical practice, higher education, and admissions. She has served for years as an Admissions Committee Chair, reviewing more than 3,000 PA school applications and participating in countless admissions decisions across multiple application cycles.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Her expertise extends beyond the admissions committee. Dr. Strange has presented at the Physician Assistant Education Association (PAEA) Regional Meeting on admissions factors, sharing evidence-informed approaches to holistic applicant review and the characteristics that contribute to successful candidates.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                PA Mentor Studio was created to provide applicants with mentorship grounded in firsthand experience. Rather than focusing on shortcuts or application &ldquo;hacks,&rdquo; Dr. Strange helps applicants understand how admissions committees evaluate academic preparation, clinical experiences, professionalism, leadership, service, and personal growth, empowering them to build authentic, competitive applications.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                This is not coaching built on secondhand advice or general
-                application strategy. It is mentorship shaped by knowing, in
-                concrete terms, what matters to programs, and what doesn&apos;t.
+                Her mission is simple: to help aspiring physician assistants become stronger applicants by making informed, strategic decisions throughout every stage of the admissions journey.
               </p>
               <Link
                 href="/about"

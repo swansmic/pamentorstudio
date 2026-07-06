@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const WATCH_URL = "https://www.pamentorstudio.com/masterclass/watch";
+const WATCH_URL = "https://pamentorstudio.com/masterclass/watch";
 
 function trim(v: unknown): string {
   return typeof v === "string" ? v.trim() : "";

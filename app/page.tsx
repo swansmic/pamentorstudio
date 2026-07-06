@@ -17,18 +17,18 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.pamentorstudio.com/#organization",
+      "@id": "https://pamentorstudio.com/#organization",
       name: "PA Mentor Studio",
-      url: "https://www.pamentorstudio.com",
+      url: "https://pamentorstudio.com",
       description:
         "Longitudinal PA school admissions mentorship from an experienced admissions committee chair.",
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.pamentorstudio.com/#website",
-      url: "https://www.pamentorstudio.com",
+      "@id": "https://pamentorstudio.com/#website",
+      url: "https://pamentorstudio.com",
       name: "PA Mentor Studio",
-      publisher: { "@id": "https://www.pamentorstudio.com/#organization" },
+      publisher: { "@id": "https://pamentorstudio.com/#organization" },
     },
   ],
 };

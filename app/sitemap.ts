@@ -50,6 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE_URL}/student-qa`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
   const posts = getAllBlogPosts();

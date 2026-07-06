@@ -12,6 +12,7 @@ export const navItems: NavItem[] = [
   },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
+  { label: "Student Q&A", href: "/student-qa" },
   { label: "FAQ", href: "/faq" },
 ];
 
@@ -24,6 +25,7 @@ export const footerLinks = {
   ],
   resources: [
     { label: "Blog", href: "/blog" },
+    { label: "Student Q&A", href: "/student-qa" },
     { label: "FAQ", href: "/faq" },
     { label: "About", href: "/about" },
   ],

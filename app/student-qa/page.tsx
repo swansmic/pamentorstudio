@@ -31,7 +31,7 @@ const qaItems: QaItem[] = [
       "Beyond those two priorities: introduce yourself to your pre-health advisor if your institution has one. Find out whether there is a pre-PA club or student organization. Begin building relationships with faculty in your science courses. These connections, built early, often produce letters of recommendation, research opportunities, and guidance that students who start late simply do not have access to.",
     ],
     takeaway:
-      "You have more time than you think. Use it with intention, not urgency.",
+      "Every strong applicant started exactly where you are. The difference is what they did next.",
   },
   {
     category: "Healthcare Experience",

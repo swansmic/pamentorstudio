@@ -152,6 +152,27 @@ function buildRegistrantText(firstName: string): string {
   ].join("\n");
 }
 
+async function subscribeToKit(firstName: string, email: string): Promise<void> {
+  const apiKey = process.env.KIT_API_KEY;
+  const sequenceId = process.env.KIT_SEQUENCE_ID;
+  if (!apiKey || !sequenceId) return;
+
+  const res = await fetch(`https://api.kit.com/v4/sequences/${sequenceId}/subscribers`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({ email_address: email, first_name: firstName }),
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`Kit API ${res.status}: ${text}`);
+  }
+}
+
 export async function POST(request: Request) {
   let raw: Record<string, unknown>;
 
@@ -184,8 +205,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: true }, { status: 200 });
   }
 
-  // Fire both emails concurrently; neither failure blocks the redirect.
-  const [internalResult, registrantResult] = await Promise.allSettled([
+  // Fire emails and Kit subscription concurrently; neither failure blocks the redirect.
+  const [internalResult, registrantResult, kitResult] = await Promise.allSettled([
     resend.emails.send({
       from: fromEmail as string,
       to: toEmail as string,
@@ -208,6 +229,7 @@ export async function POST(request: Request) {
       html: buildRegistrantHtml(firstName),
       text: buildRegistrantText(firstName),
     }),
+    subscribeToKit(firstName, email),
   ]);
 
   if (internalResult.status === "rejected") {
@@ -230,6 +252,15 @@ export async function POST(request: Request) {
     );
   } else {
     console.log("[Masterclass] Registrant confirmation sent to:", email);
+  }
+
+  if (kitResult.status === "rejected") {
+    console.error(
+      "[Masterclass] Kit subscription failed:",
+      kitResult.reason instanceof Error ? kitResult.reason.message : kitResult.reason
+    );
+  } else {
+    console.log("[Masterclass] Kit subscriber added:", email);
   }
 
   return NextResponse.json({ success: true }, { status: 200 });

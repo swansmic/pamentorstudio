@@ -37,6 +37,14 @@ export default function AboutPage() {
               foundation the mentorship is built on, not a general familiarity
               with the process, but direct, structured experience inside it.
             </p>
+            <p className="text-muted-foreground leading-relaxed">
+              The goal behind all of it is straightforward: to help aspiring PAs
+              build applications that are purposeful and strategic, and that
+              genuinely reflect who they are and why this profession matters to
+              them. Not applications that are optimized to look a certain way,
+              but ones that make it clear to anyone reading them that this
+              particular person belongs in PA medicine.
+            </p>
           </div>
 
           <div className="space-y-4">

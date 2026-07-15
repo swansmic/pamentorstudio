@@ -3,6 +3,8 @@ import { PageHeader } from "@/components/sections/page-header";
 import { ContentSection } from "@/components/sections/content-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { createMetadata } from "@/lib/metadata";
+import { StudentQaList } from "@/components/student-qa/student-qa-list";
+import type { QaItem } from "@/components/student-qa/student-qa-list";
 
 export const metadata: Metadata = createMetadata({
   title: "Student Q&A",
@@ -11,20 +13,14 @@ export const metadata: Metadata = createMetadata({
   path: "/student-qa",
 });
 
-interface QaItem {
-  category: string;
-  question: string;
-  paragraphs: string[];
-  takeaway: string;
-}
-
 const qaItems: QaItem[] = [
   {
     category: "Getting Started",
     question:
       "I am a freshman with no healthcare experience or prerequisites completed. Where do I even start?",
+    brief:
+      "Start with one prerequisite course and one clinical setting this semester. Those two steps create the foundation everything else builds on.",
     paragraphs: [
-      "Start with one concrete step in each direction: one prerequisite course and one clinical setting. Everything else builds from there.",
       "Being a freshman with no prerequisites completed and no clinical hours is not a disadvantage. It is exactly where you are supposed to be. The applicants who struggle are the ones who reach their junior year having done neither. You have time to do this well, which is a genuine advantage over students who begin thinking about their application at the last minute.",
       "On the academic side, begin with whichever prerequisite fits naturally into your first semester schedule. Biology and Chemistry are typically the foundation everything else builds on. Focus on earning strong grades rather than moving quickly. A well-paced science sequence with consistent performance will serve you far better than rushing through prerequisites and earning mediocre grades.",
       "On the clinical side, identify one way to get into patient contact this semester, even if it is only a few hours a week. A CNA certification program is an excellent option if your schedule allows it. If not, a hospital volunteer role with direct patient contact, an EMT course, or a medical assistant position can all open doors. The goal is to get into a clinical setting early so that by the time you apply, you have years of experience rather than months.",
@@ -36,8 +32,9 @@ const qaItems: QaItem[] = [
   {
     category: "Healthcare Experience",
     question: "Should I start working as a CNA during my freshman year of college?",
+    brief:
+      "Yes, start as early as you possibly can. The CASPA cycle opens sooner than most students expect, and clinical depth matters far more than a last-minute hours count.",
     paragraphs: [
-      "Yes. Start as early as you possibly can.",
       "Here is something most pre-PA students do not realize until it is too late: the CASPA application cycle opens in late April of the year you plan to apply. If you are planning to apply the summer after your junior year, that deadline is much closer than it feels when you are a freshman. Every semester you wait is a semester you do not have.",
       "Starting your healthcare experience early does not just mean accumulating hours. It means building depth. An applicant who has worked consistently as a CNA for two and a half years has something to say that hours alone can never manufacture: perspective. You have seen patients decline, navigated difficult family dynamics, worked alongside clinical teams, and come to understand what each person on that team actually contributes. That kind of experience shows in your personal statement, in your essays, and in the way you answer clinical questions during your interview.",
       "If you have the option, choose a clinical area you are genuinely interested in, whether that is oncology, pediatrics, neurology, or general med-surg. Work you care about is infinitely easier to write about. When your personal statement draws on real moments that moved you, interviewers feel that authenticity immediately.",
@@ -49,8 +46,9 @@ const qaItems: QaItem[] = [
   {
     category: "Healthcare Experience",
     question: "Does volunteering count as patient care experience?",
+    brief:
+      "It depends on what you are doing, not what it is called. Hands-on direct patient care counts; observational or administrative roles do not.",
     paragraphs: [
-      "It depends entirely on what you are doing, not what it is called.",
       "CASPA categorizes experience as either direct patient care or healthcare experience, and that distinction matters. The determining factor is direct, hands-on contact where you are providing care or assisting with care. You are touching patients, helping with physical needs, monitoring vitals, supporting clinical tasks. That is patient care experience.",
       "Greeting patients at a reception desk, delivering items, directing visitors, or sitting with patients for companionship without any clinical component is healthcare experience or volunteer service. It has value, but it does not carry the same weight as direct care, and programs evaluate the two categories differently.",
       "I have seen applicants categorize hospital volunteer hours as patient care experience when the role did not involve direct care. That discrepancy can create problems if it becomes apparent during an application review or interview. Be accurate when logging your hours in CASPA. The short-term benefit of inflating a category is not worth the risk to your credibility.",
@@ -63,8 +61,9 @@ const qaItems: QaItem[] = [
   {
     category: "Shadowing",
     question: "How do I find shadowing opportunities?",
+    brief:
+      "Many hospital systems already have formal student shadowing programs. Start by calling Human Resources or the Student Programs Coordinator, and broaden your search to outpatient clinics and private practices if needed.",
     paragraphs: [
-      "Start by looking for what already exists.",
       "Most students assume finding shadowing requires knowing the right person or having a personal connection to a PA. That is not true. Many hospital systems, including large academic medical centers, have formal student shadowing programs already in place. These programs exist specifically for students like you and are often underutilized simply because applicants do not know to ask.",
       "Start by calling the hospital directly and asking to speak with Human Resources or the Student Programs Coordinator. These offices typically maintain lists of providers who have already agreed to host students. The process is usually far more straightforward than students expect, often a short application, a background check, and you are on the schedule.",
       "If the hospital route does not pan out, broaden your search to outpatient clinics and private practices. Urgent care centers, orthopedic offices, dermatology practices, and primary care clinics all regularly work with PAs, and many are open to hosting motivated students. In these settings, a professional email or phone call directly to the practice manager can open doors that never get listed anywhere online.",
@@ -77,8 +76,9 @@ const qaItems: QaItem[] = [
   {
     category: "Shadowing",
     question: "How many shadowing hours do I actually need?",
+    brief:
+      "Enough to observe a PA in more than one clinical context and speak to that experience with genuine depth. A practical target for most applicants is 100 or more hours.",
     paragraphs: [
-      "Enough to have observed a PA practicing independently across more than one clinical context, and enough to speak to that experience with genuine depth.",
       "Published minimums vary widely across programs, with many listing 40 to 100 hours as a requirement. But the question of how many hours you need is not the same as the question of how many hours you should have. A student who has shadowed for 40 hours and can speak thoughtfully about what they observed is better positioned than one who logged 200 hours while disengaged.",
       "A practical target for most applicants is 100 or more hours, spread across at least two different PAs or clinical settings if possible. Seeing the PA role in a surgical specialty is a different experience from seeing it in primary care or urgent care. That range strengthens both your understanding of the profession and your ability to discuss it in your personal statement and interview.",
       "Pay attention to program-specific requirements before you finalize your application list. Some programs require shadowing to be with a PA specifically, not a physician or other provider. If you have accumulated significant hours shadowing physicians, that experience is valuable, but it may not satisfy a PA-specific shadowing requirement. Check each program's criteria carefully.",
@@ -90,8 +90,9 @@ const qaItems: QaItem[] = [
     category: "Prerequisites",
     question:
       "Can I complete prerequisite courses online through a less expensive college?",
+    brief:
+      "Yes, with one important verification step first. Confirm regional accreditation and that each course transfers exactly as required before you enroll anywhere.",
     paragraphs: [
-      "Yes, with one important step first.",
       "Taking prerequisites at a community college or a more affordable institution is a legitimate strategy, and I encourage students to explore it. Cost is real, and there is no reason to overpay for coursework that meets the same academic standard. But before you register for a single class, there are two things you must verify. Skipping either one can cost you far more than you ever saved on tuition.",
       "First, confirm the institution is regionally accredited. Accreditation from organizations like the Higher Learning Commission or SACSCOC signals that the institution meets recognized academic standards. Many PA programs explicitly state they will not accept coursework from nationally accredited or unaccredited institutions. No tuition savings is worth earning credits a program will not count.",
       'Second, and this is where students most often get caught, verify that each specific course transfers exactly as required. Not all science courses transfer equally. A course that satisfies a biology requirement at one institution may arrive on your transcript only as a general elective or an introductory course at another. If a PA program requires Anatomy and Physiology I and II as specific prerequisites, you need those credits to appear that way, not as "Life Science 101."',
@@ -104,8 +105,9 @@ const qaItems: QaItem[] = [
     category: "Prerequisites",
     question:
       "Does it matter whether I complete my prerequisite courses at a community college versus a four-year university?",
+    brief:
+      "For most programs, the institution matters far less than your performance. Regional accreditation and correct transfer credit matter more than where the course was taken.",
     paragraphs: [
-      "For most programs, the institution matters less than your performance in the course.",
       "Regional accreditation is the baseline requirement. As long as the institution is regionally accredited and the course transfers correctly, the majority of PA programs will accept that credit. A well-earned A in Anatomy at a community college is not inherently less credible than the same grade at a flagship university.",
       "That said, nuance exists. Some programs note in their materials that they prefer or require upper-level science coursework to be completed at a four-year institution. A small number of programs do weigh the academic rigor of the institution when evaluating applicants, particularly when comparing otherwise similar files. Review the stated preferences of programs you are targeting before assuming all institutions are treated equally.",
       "The more common issue is not the prestige of the institution but how the credit transfers. A course completed at a community college that arrives on your transcript as an introductory elective, rather than the specific prerequisite a program requires, creates a problem regardless of your grade. Verify the transfer before you enroll.",
@@ -118,8 +120,9 @@ const qaItems: QaItem[] = [
     category: "GPA & Academics",
     question:
       "My GPA is lower than most PA programs recommend. Should I even apply?",
+    brief:
+      "A low GPA does not automatically close the door, but it changes your strategy. Grade trend, science GPA, clinical depth, and recency of coursework all factor into how that number reads on a file.",
     paragraphs: [
-      "A low GPA does not automatically close the door, but it does change your strategy.",
       "When I review applications, GPA is never just a number. I am looking at your science GPA separately from your overall GPA, whether your grades improved over time, and how recently the coursework was completed. An upward trend, especially in science prerequisites, tells me something meaningful about your growth and persistence. A stagnant or declining trajectory tells a different story.",
       "That said, some programs publish minimum GPA cutoffs that function as hard stops, and no amount of strong clinical experience will move your file past a system filter set at 3.0 or 3.2. Before you spend money applying, identify which programs have non-negotiable minimums and whether you meet them.",
       "For programs without hard floors, context matters. Strong clinical experience, compelling letters of recommendation, and a personal statement that shows genuine growth can offset a lower GPA, especially when paired with an upward grade trend. A 2.8 GPA with strong junior and senior year science grades and 3,000 hours of direct patient care is a very different file than a 2.8 with no clinical depth and no evidence of improvement.",
@@ -130,8 +133,9 @@ const qaItems: QaItem[] = [
   {
     category: "GPA & Academics",
     question: "Should I retake a course where I earned a C to improve my GPA?",
+    brief:
+      "It depends on the course. CASPA includes both grades in the GPA calculation, but a strong retake in a core science prerequisite demonstrates competency and can make a meaningful difference.",
     paragraphs: [
-      "It depends on the course and what you plan to do with the retake.",
       "Here is something many students do not realize until after they submit: CASPA calculates your GPA using every attempt at a course, not just the most recent one. A C followed by an A will raise your GPA, but both grades remain part of the calculation. You cannot erase the original grade by retaking the course.",
       "So why retake at all? Because demonstrating competency matters, especially in core science prerequisites. If you earned a C in Anatomy and Physiology, Biochemistry, or Microbiology, a strong retake sends a clear message: you understand the material now, and you took responsibility for improving. Admissions committees notice that.",
       "What I would caution against is retaking a course purely as a GPA management strategy with no real academic purpose. If you earned a C in a general education elective, retaking it does very little for your application and takes time you could spend strengthening other areas.",
@@ -143,8 +147,9 @@ const qaItems: QaItem[] = [
   {
     category: "Application Strategy",
     question: "How many PA programs should I apply to?",
+    brief:
+      "Between eight and fifteen programs is a reasonable target for most applicants. Composition matters more than count: include a range of competitiveness and research each program before applying.",
     paragraphs: [
-      "Enough to give yourself a genuine chance, not so many that you cannot do each application justice.",
       "There is no universal right number, but I can tell you what I see in practice. Students who apply to thirty programs often submit weaker supplemental materials because they are spread too thin. Students who apply to five programs often do not have enough geographic or competitiveness range to absorb a difficult cycle. Somewhere between eight and fifteen programs is a reasonable target for most applicants, with the exact number shaped by your individual profile and your flexibility around location.",
       "What matters more than the number is the composition. Your list should include programs where your GPA, science GPA, and clinical hours meet or exceed their published averages; programs where you are at or near the average; and a few programs that are a stretch by the numbers but where other elements of your application may resonate. That range gives you options without setting you up to spend significant money and time on applications where you have very little chance.",
       "Supplemental applications, which many programs require, take real time and effort to complete well. A rushed secondary essay is often obvious to reviewers. If applying to twenty programs means fifteen of them receive generic responses, your list is too long.",
@@ -155,8 +160,9 @@ const qaItems: QaItem[] = [
   {
     category: "Application Strategy",
     question: "When is the best time to submit my CASPA application?",
+    brief:
+      "As early in the cycle as possible. Rolling admissions programs fill interview slots starting in June and July, and late applicants often compete for remaining seats rather than the full class.",
     paragraphs: [
-      "As early in the cycle as possible. Rolling admissions is not a metaphor. It is a real and significant advantage.",
       "CASPA opens in late April each year. Most programs begin reviewing applications as soon as they are verified and complete, which means interview slots at rolling admissions programs start filling in June and July. An applicant who submits in September is not just later. They are often competing for the remaining seats, not the full class.",
       "I have seen strong applicants who waited until fall miss interviews entirely at programs that would have interviewed them had they applied in June. The application itself did not change. The timing did.",
       "Here is the practical implication: your application materials should be substantially ready before CASPA opens, not after. That means your personal statement should be in strong draft form by April, your letters of recommendation should be requested well in advance with clear deadlines communicated, and your experience hours should be finalized or very close to it. Do not wait to request transcripts. Transcript processing adds time you cannot afford to lose.",
@@ -167,8 +173,9 @@ const qaItems: QaItem[] = [
   {
     category: "Personal Statement",
     question: "How do I know which experiences to write about in my personal statement?",
+    brief:
+      "Write about the experience that changed how you think, not the one that looks most impressive. One focused moment of genuine insight almost always serves an application better than a list of everything you have done.",
     paragraphs: [
-      "Write about the experience that changed how you think, not the one that looks most impressive on paper.",
       "After reading thousands of personal statements, I can tell you that the ones I remember are not the ones with the most impressive credentials. They are the ones where I can feel a specific moment of genuine insight. The applicant who noticed something in a clinical encounter that reframed everything they thought they understood about patient care. The one who made a mistake, sat with it, and came out the other side with a clearer sense of purpose. Those statements stay with you.",
       "What does not stay with you is a well-organized tour of every meaningful experience the applicant has ever had. Long lists of experiences, even impressive ones, read like a resume. A personal statement is not a resume. It is an argument for why you specifically are ready for this specific profession.",
       "To find the right experience, ask yourself: which moment made me more certain that PA was the right path? Which clinical encounter, conversation, or challenge revealed something about the work that I could not have learned any other way? Which experience would be genuinely difficult to replicate, not because of where it happened, but because of what I learned from being there?",
@@ -181,8 +188,9 @@ const qaItems: QaItem[] = [
     category: "Personal Statement",
     question:
       "Should I address a low GPA or a failed course in my personal statement?",
+    brief:
+      "Only if the explanation adds context the numbers alone cannot provide. Keep it brief, honest, and forward-looking, then move on.",
     paragraphs: [
-      "Only if the explanation adds context that the numbers alone cannot provide, and only if you can be brief, honest, and forward-looking.",
       "Admissions committees notice low GPAs and grade anomalies on their own. You do not need to point to them. What you do need to decide is whether explaining them would help your application or simply draw more attention to a weak point.",
       "If there was a significant external circumstance, a serious illness, a family crisis, a mental health episode that you have since addressed, briefly acknowledging it can provide context that humanizes the data. Keep it to two or three sentences. State what happened, how you responded, and what has changed. Then move forward. The purpose is context, not sympathy.",
       "What I would strongly caution against is using the personal statement to rationalize or excuse poor academic performance without evidence of genuine growth. Committees read those statements carefully. If the narrative reads like an explanation without accountability, it raises more concerns than it resolves.",
@@ -194,8 +202,9 @@ const qaItems: QaItem[] = [
   {
     category: "Letters of Recommendation",
     question: "Who should I ask for letters of recommendation?",
+    brief:
+      "Ask people who know your work well and can speak to it specifically, not people with impressive titles. Most programs require at least one letter from a PA who has directly observed you.",
     paragraphs: [
-      "Ask people who know your work well and can speak to it specifically, not people who have an impressive title.",
       "This is one of the most common mistakes I see in applications: an applicant collects letters from physicians, professors, or community leaders they barely know, and the resulting letters are polite but generic. 'I had the pleasure of knowing this student' tells a committee almost nothing. A letter that describes a specific clinical moment, a particular academic strength, or a pattern of professional behavior over time, that letter does real work.",
       "Most PA programs require at least one letter from a PA who has supervised or observed you directly. If you have shadowed or worked alongside a PA, that relationship is worth cultivating long before you need a letter. Providers who have seen you handle patients, communicate with families, or navigate a difficult situation can write the kind of letter that actually differentiates an application.",
       "For academic letters, choose a faculty member in a science course who knows your work and your character. A professor who taught 400-person lecture courses and barely knows your name is a weaker choice than an instructor from a smaller course where you were engaged, asked good questions, and produced strong work.",
@@ -209,8 +218,9 @@ const qaItems: QaItem[] = [
     category: "Letters of Recommendation",
     question:
       "How do I ask a PA I barely know to write me a letter of recommendation?",
+    brief:
+      "Request a meeting in person rather than a cold email, ask specifically for a strong letter so they have an honest exit if needed, and follow up with a resume and specific moments they can reference.",
     paragraphs: [
-      "Give them a reason to say yes, and enough material to write something meaningful.",
       "The first step is honest self-assessment. If you have shadowed someone for ten hours and had minimal direct interaction, think carefully about whether they are the right person to ask, not just the most convenient one. A PA who has observed you closely over time will write a stronger letter than one who is technically willing but has limited material to draw from.",
       "If the PA you are considering is genuinely your best option, here is how to make the ask work. Request a brief meeting in person or by phone rather than sending a cold email request. Introduce yourself clearly, remind them of the context in which they know you, and explain honestly where you are in the process. Then ask directly: 'Would you be able to write me a strong letter of recommendation?'",
       "That word strong matters. It gives them an easy, honest exit if they do not feel they can speak to your abilities with confidence. A lukewarm or generic letter can actually hurt an application. You want someone who will say yes enthusiastically, not out of obligation.",
@@ -224,8 +234,9 @@ const qaItems: QaItem[] = [
     category: "Interview",
     question:
       'How should I answer the interview question, "Tell me about yourself?" I was planning to talk about enjoying science in high school and working as a PCA during college.',
+    brief:
+      'Skip the life timeline. "Tell me about yourself" is an invitation to share one thing that genuinely defines you, not a prompt to summarize your resume.',
     paragraphs: [
-      '"Tell me about yourself" is an invitation, not a biography request. Skip the life timeline.',
       'I have heard thousands of answers to this question, and the majority sound almost identical: "I grew up loving science, I started volunteering in a hospital in high school, and then I worked as a PCA in college." That answer is not wrong. It is just forgettable. When a committee member can predict your next sentence before you say it, you have already lost the room.',
       "What the committee is actually asking is: who are you, and why should we remember you? This is your chance to set the tone for the entire interview. Do not waste it summarizing your resume. They already have it.",
       "Instead, pick one theme that genuinely defines you. Not your whole story, just one thread. Maybe it is the way a specific clinical experience completely changed how you thought about patient care. Maybe it is a challenge you overcame that shaped your resilience. Maybe it is a perspective most applicants in that room simply do not have.",
@@ -239,8 +250,9 @@ const qaItems: QaItem[] = [
     category: "Interview",
     question:
       "Should I just prepare answers to common interview questions, or should I do mock interviews?",
+    brief:
+      "Mock interviews are not optional. Preparing answers and practicing delivery are different skills, and admissions committees can immediately tell the difference between a rehearsed applicant and a practiced one.",
     paragraphs: [
-      "Preparing answers and practicing delivery are not the same skill. And the difference is immediately visible to anyone sitting across the table.",
       "After years on admissions committees, I can tell you that rehearsed applicants are recognizable almost instantly. There is a specific quality to an answer that has been written, memorized, and recited. It is polished in the wrong way. It sounds like a presentation rather than a conversation. Even genuinely strong answers, delivered flatly or at a sprint, can quietly undermine what should be a compelling application.",
       "Here is what preparing answers alone does not do: it does not train you to think under pressure. It does not help you when an interviewer asks a follow-up you did not anticipate. It does not prepare you for the physical reality of nerves, the dry mouth, the faster heartbeat, the way a blank mind feels nothing like a prepared one. And it does not show you the habits you do not know you have, like speaking too quickly, trailing off at the end of sentences, over-qualifying every answer, or avoiding eye contact when you are trying to remember a line.",
       "Mock interviews do all of that. When you practice speaking your answers aloud, ideally with someone who will give you honest, direct feedback, you develop fluency. You stop searching for words and start communicating. Your answers begin to feel like your own thoughts rather than sentences you are trying to retrieve.",
@@ -252,8 +264,9 @@ const qaItems: QaItem[] = [
   {
     category: "Waitlist",
     question: "I have been placed on a waitlist. What, if anything, should I do?",
+    brief:
+      "Send a brief letter of continued interest, then be patient and professional. Frequent contact does not improve your standing, and waitlists resolve on their own timeline.",
     paragraphs: [
-      "Send a letter of continued interest, then be patient and professional.",
       "Being waitlisted is not a rejection. It means the program considered you qualified and is holding a place for you in the event that the class does not fill from the accepted pool. Movement happens at most programs, sometimes significantly, as accepted applicants commit elsewhere and seats open.",
       "A letter of continued interest is appropriate and, at many programs, expected. It should be brief, one page or less, and it should do two things: reaffirm your genuine interest in that specific program and update the committee on any meaningful developments since your application or interview. A new clinical role, a completed prerequisite, a promotion, an award. If nothing significant has changed, a sincere and specific statement of continued interest is sufficient on its own.",
       "What you should not do is contact the program repeatedly or ask admissions staff to assess your position on the waitlist. Programs rarely disclose rankings, and frequent contact does not improve your standing. It signals anxiety rather than confidence.",
@@ -267,8 +280,9 @@ const qaItems: QaItem[] = [
     category: "Reapplication",
     question:
       "I was not accepted this cycle. How do I strengthen my application before reapplying?",
+    brief:
+      "Before you change anything, identify what actually cost you. Repeating the same application with minor adjustments almost always produces the same result.",
     paragraphs: [
-      "Before you change anything, identify what actually cost you. Guessing without data is how applicants repeat the same cycle twice.",
       "Rejection without reflection produces a repeat rejection. The most common mistake reapplicants make is adding more of what they already had, more hours, more programs, a slightly edited personal statement, without addressing the root issue.",
       "Start by requesting feedback from programs that interviewed you but did not extend an offer. Not every program will respond, but some will, and even a brief response can point you toward something useful. If you were screened out before the interview stage consistently, the issue likely lives in the objective parts of your application: GPA, science GPA, clinical hours, or how your CASPA application was completed.",
       "If you received interviews but no offers, the problem is almost certainly the interview itself. That is fixable, but it requires honest practice, not just more preparation. Work with someone who can give you candid feedback on how you present, not just what you say.",
@@ -289,36 +303,7 @@ export default function StudentQaPage() {
       />
 
       <ContentSection narrow>
-        <div className="space-y-16">
-          {qaItems.map((item, index) => (
-            <article key={index}>
-              <div className="space-y-3 mb-6">
-                <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  {item.category}
-                </span>
-                <h2 className="font-heading text-xl md:text-2xl font-semibold text-foreground leading-snug">
-                  {item.question}
-                </h2>
-              </div>
-
-              <div className="space-y-4 mb-6">
-                {item.paragraphs.map((paragraph, pIndex) => (
-                  <p key={pIndex} className="text-base text-foreground leading-relaxed">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-
-              <p className="text-base font-medium text-foreground border-l-2 border-primary pl-4 italic leading-relaxed">
-                {item.takeaway}
-              </p>
-
-              {index < qaItems.length - 1 && (
-                <hr className="border-border mt-14" />
-              )}
-            </article>
-          ))}
-        </div>
+        <StudentQaList items={qaItems} />
       </ContentSection>
 
       <CtaSection

@@ -291,6 +291,38 @@ const qaItems: QaItem[] = [
     ],
     takeaway: "Use the time. Make it count.",
   },
+  {
+    category: "For Parents",
+    question:
+      "How do I support my child through the application process without adding to their stress?",
+    brief:
+      "Be present without taking over. The most supportive thing you can do is show genuine interest while letting the decisions and the effort remain entirely theirs.",
+    paragraphs: [
+      "The PA school application is deeply personal. The personal statement, the clinical experiences, the interview, all of it has to come from your child's own voice and their own reflection. When parents get heavily involved in editing essays, managing timelines, or driving strategy, it often shows, and not in a good way. Admissions committees read thousands of applications and can recognize when a personal statement has been over-handled.",
+      "What your child actually needs from you is simpler than you might think. They need someone to talk to who is not going to evaluate their performance. A parent who asks how things are going and genuinely listens, without turning the conversation into a status report or a comparison to someone else's path, is providing something genuinely valuable.",
+      "Practically speaking, if you can help with logistics, driving to a shadowing site, covering an application fee, creating space in the household during a stressful stretch, those are real forms of support. What tends to add stress is the opposite: unsolicited opinions on which programs to apply to, questions about why they have not submitted yet, or visible anxiety about the outcome that your child then has to manage on top of their own.",
+      "The waiting periods in this process are long and genuinely hard. From CASPA submission to interview invitations can take months. From interview to decision can take months more. Normalizing the uncertainty rather than checking in daily goes a long way.",
+      "And if they do not get in: be the safe place to land. Not the place where they have to explain themselves or defend their choices, but the place where they can be disappointed without it becoming a family crisis. That kind of steady support is what actually helps someone get up and try again.",
+    ],
+    takeaway:
+      "Your job is not to get them in. Your job is to make sure they still feel like themselves when it is over.",
+  },
+  {
+    category: "For Parents",
+    question:
+      "What can a PA actually do, and how is the role different from a doctor or a nurse practitioner?",
+    brief:
+      "PAs are licensed medical providers who diagnose illness, develop treatment plans, prescribe medications, and perform procedures across virtually every medical specialty.",
+    paragraphs: [
+      "A physician assistant, increasingly referred to as a physician associate, is a graduate-level medical provider who practices medicine with a high degree of autonomy. PAs take patient histories, order and interpret diagnostic tests, diagnose conditions, prescribe medications, perform procedures, and manage ongoing care. In many clinical settings, a patient's interaction with a PA is functionally indistinguishable from an interaction with a physician.",
+      "The comparison to physicians is straightforward in terms of scope but different in terms of training. Physicians complete four years of medical school followed by residency training of three to seven or more years depending on specialty. PAs complete a graduate-level PA program, typically two to three years in length, following an undergraduate degree with significant clinical experience. Both paths lead to licensed medical practice across specialties.",
+      "The comparison to nurse practitioners is more nuanced. NPs enter their training from a nursing background, which shapes their clinical philosophy and their scope of practice. PAs are trained from a medical model that closely mirrors physician training. In practice, both are advanced practice providers and the distinction matters less to patients than it once did. Both can prescribe, diagnose, and in many states practice independently.",
+      "PAs work in every specialty, including surgery, emergency medicine, dermatology, oncology, psychiatry, orthopedics, and primary care. The flexibility of the credential is one of its genuine strengths. A PA can move between specialties across a career in ways that physicians, who invest years in specialty training, typically cannot.",
+      "Job security and earning potential for PAs are strong. The Bureau of Labor Statistics consistently ranks PA among the fastest-growing professions, and median salaries are competitive with other advanced practice providers. This is a serious, respected medical career chosen deliberately by people who want to practice clinical medicine without the decade-plus training commitment that physician training requires.",
+    ],
+    takeaway:
+      "Choosing PA is not a backup plan. For many clinicians, it is exactly the career they were looking for.",
+  },
 ];
 
 export default function StudentQaPage() {

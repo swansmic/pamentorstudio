@@ -17,7 +17,7 @@ export default function PrivacyPage() {
       <ContentSection narrow>
         <div className="prose prose-editorial prose-sm max-w-none text-muted-foreground">
           <p className="text-xs text-muted-foreground mb-8">
-            Last updated: July 20, 2026
+            Last updated: July 21, 2026
           </p>
 
           <p className="leading-relaxed">
@@ -53,7 +53,8 @@ export default function PrivacyPage() {
           </ul>
           <p className="leading-relaxed">
             This information is collected through cookies and analytics
-            technologies, including Vercel Analytics and Meta Pixel.
+            technologies, including Vercel Analytics, Microsoft Clarity, and
+            Meta Pixel.
           </p>
 
           <h2>How We Use Your Information</h2>
@@ -93,6 +94,12 @@ export default function PrivacyPage() {
           <p className="leading-relaxed">
             We use Meta Pixel and other analytics tools to measure advertising
             performance and provide more relevant advertising.
+          </p>
+          <p className="leading-relaxed">
+            We use Microsoft Clarity to understand how visitors interact with
+            our site through tools such as session recordings and heatmaps.
+            Clarity helps us identify usability issues and improve the site
+            experience.
           </p>
           <p className="leading-relaxed">
             You can adjust your browser settings to refuse cookies, although
@@ -137,6 +144,7 @@ export default function PrivacyPage() {
             <li>Resend (transactional email delivery)</li>
             <li>Kit (email marketing)</li>
             <li>Meta (advertising analytics)</li>
+            <li>Microsoft Clarity (behavior analytics)</li>
             <li>Vercel (website hosting and analytics)</li>
           </ul>
           <p className="leading-relaxed">

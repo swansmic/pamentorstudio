@@ -17,7 +17,7 @@ export default function TermsPage() {
       <ContentSection narrow>
         <div className="prose prose-editorial prose-sm max-w-none text-muted-foreground">
           <p className="text-xs text-muted-foreground mb-8">
-            Effective Date: July 20, 2026
+            Effective Date: July 21, 2026
           </p>
 
           <p className="leading-relaxed">
@@ -212,6 +212,7 @@ export default function TermsPage() {
             <li>Resend</li>
             <li>Kit</li>
             <li>Meta</li>
+            <li>Microsoft Clarity</li>
             <li>Vercel</li>
           </ul>
           <p className="leading-relaxed">

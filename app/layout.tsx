@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { MetaPixelScript } from "@/components/meta-pixel-script";
+import { ClarityScript } from "@/components/clarity-script";
 import "./globals.css";
 
 const inter = Inter({
@@ -66,6 +67,7 @@ export default function RootLayout({
         <SiteFooter />
         <Analytics />
         <MetaPixelScript />
+        <ClarityScript />
       </body>
     </html>
   );

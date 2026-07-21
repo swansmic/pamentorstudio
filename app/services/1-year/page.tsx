@@ -11,6 +11,27 @@ export const metadata: Metadata = createMetadata({
   path: "/services/1-year",
 });
 
+const oneYearPhases = [
+  {
+    title: "Phase 1: Readiness, Strategy, and Gap Identification",
+    question: "What must be fixed, clarified, or completed immediately?",
+    description:
+      "This phase includes intake, readiness assessment, timeline planning, academic/prerequisite review, experience audit, school list strategy, and gap prioritization.",
+  },
+  {
+    title: "Phase 2: Application Materials and Submission Preparation",
+    question: "How does the student present a coherent, accurate, and compelling application?",
+    description:
+      "This phase includes personal statement work, CASPA experience descriptions, recommendation strategy, supplemental planning, and final checklist review.",
+  },
+  {
+    title: "Phase 3: Interviews, Decisions, and Transition",
+    question: "How does the student navigate the active cycle with professionalism and strong interview performance?",
+    description:
+      "This phase includes interview story development, mock interviews, ethical reasoning, program-specific preparation, post-interview communication, decision support, and transition or reapplication planning.",
+  },
+];
+
 export default function OneYearPage() {
   return (
     <>
@@ -59,14 +80,44 @@ export default function OneYearPage() {
             </ul>
           </div>
 
+          <div className="space-y-10">
+            <div className="space-y-4">
+              <h2 className="font-heading text-2xl font-semibold">
+                The application year, phase by phase
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Twelve months is one continuous cycle, not three separate
+                blocks, but the work still moves through distinct phases.
+                Here is what each is generally built around.
+              </p>
+            </div>
+
+            {oneYearPhases.map((phase) => (
+              <div key={phase.title} className="space-y-4 border-t border-border pt-8">
+                <div>
+                  <h3 className="font-heading text-lg font-semibold text-foreground">
+                    {phase.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground italic mt-1">
+                    {phase.question}
+                  </p>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  {phase.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
           <div className="space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Mentorship structure</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Sessions are structured around your application timeline, not a
-              predetermined curriculum. Frequency and focus are calibrated to
-              where you are in the process and what requires the most attention
-              at each stage. Between sessions, written feedback and
-              asynchronous support are available as needed.
+              Sessions are held once per month, virtually, for 60 minutes,
+              structured around your application timeline rather than a
+              predetermined curriculum. Focus is calibrated to where you are
+              in the process and what requires the most attention at each
+              stage. Between sessions, written feedback and asynchronous
+              support are available as needed.
             </p>
           </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Users } from "lucide-react";
 import { PageHeader } from "@/components/sections/page-header";
 import { ContentSection } from "@/components/sections/content-section";
 import { CtaSection } from "@/components/sections/cta-section";
@@ -16,6 +17,27 @@ export const metadata: Metadata = createMetadata({
 export default function ServicesPage() {
   return (
     <>
+      <div className="bg-primary text-primary-foreground">
+        <div className="max-w-6xl mx-auto px-6 py-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center">
+          <Users className="size-4 shrink-0 opacity-80" aria-hidden="true" />
+          <p className="text-sm">
+            Mentorship welcomes applicants from every background and stage of
+            the journey.{" "}
+            <span className="font-medium">
+              Enrollment is intentionally limited each cycle
+            </span>{" "}
+            —{" "}
+            <Link
+              href="/apply"
+              className="font-medium underline underline-offset-2 hover:no-underline"
+            >
+              apply before spots fill
+            </Link>
+            .
+          </p>
+        </div>
+      </div>
+
       <PageHeader
         label="Mentorship Pathways"
         title="Three structures. One approach to preparation."
@@ -94,6 +116,29 @@ export default function ServicesPage() {
               If you are uncertain which pathway fits, the application process
               includes a consultation. Questions about fit are part of what
               that conversation is for.
+            </p>
+          </div>
+        </div>
+
+        <div className="border-t border-border pt-12 mt-12 max-w-3xl">
+          <h2 className="font-heading text-2xl font-semibold text-foreground mb-5">
+            Why enrollment stays small
+          </h2>
+          <div className="space-y-4 text-muted-foreground">
+            <p className="leading-relaxed">
+              PA Mentor Studio works with a deliberately small number of
+              students at any given time. Each pathway involves direct,
+              ongoing engagement: reviewing application materials in depth,
+              thinking through clinical and academic decisions as they come
+              up, and being genuinely available between sessions when
+              something changes.
+            </p>
+            <p className="leading-relaxed">
+              That level of attention has a ceiling. The number of students
+              accepted each cycle is set by how much sustained time one
+              mentor can actually give, not by how much demand there is. Once
+              the roster is full, new applicants move to a waitlist rather
+              than being folded in to make room.
             </p>
           </div>
         </div>

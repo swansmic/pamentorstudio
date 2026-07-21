@@ -11,6 +11,36 @@ export const metadata: Metadata = createMetadata({
   path: "/services/2-year",
 });
 
+const twoYearArc = [
+  {
+    title: "Year 1: Application Readiness and Submission Preparation",
+    question: "What must be built, repaired, clarified, or completed before submission?",
+    description:
+      "Year 1 begins with a comprehensive candidacy audit and moves quickly into application strategy. The student should leave Year 1 with a realistic school list, clear application timeline, refined narrative, accurate experience documentation, recommender plan, and a submission-readiness checklist.",
+    outcomes: [
+      "Student has a realistic readiness assessment and application timeline",
+      "Student understands strengths, gaps, and highest-priority risks",
+      "Student has a working school list based on fit and requirements",
+      "Student develops personal statement and CASPA experience materials",
+      "Student has a recommendation strategy and outreach plan",
+      "Student has a gap-closing plan before submission",
+    ],
+  },
+  {
+    title: "Year 2: Final Execution, Interviews, Decisions, and Transition",
+    question: "How does the student execute the active cycle with clarity, professionalism, and strong interview performance?",
+    description:
+      "Year 2 assumes the student is nearing submission, actively applying, interviewing, or navigating decisions. The work focuses on final quality control, supplemental essays, program communication, mock interviews, post-interview strategy, waitlists, acceptances, program comparison, and transition or reapplication planning.",
+    outcomes: [
+      "Student completes final application quality-control checks",
+      "Student manages supplementals, portals, and program communication professionally",
+      "Student completes structured interview preparation and mock interviews",
+      "Student navigates decisions, waitlists, and uncertainty with a clear plan",
+      "Student transitions into PA school or reapplication with concrete next steps",
+    ],
+  },
+];
+
 export default function TwoYearPage() {
   return (
     <>
@@ -36,25 +66,57 @@ export default function TwoYearPage() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Year One: Foundation and Development</h2>
+            <h2 className="font-heading text-2xl font-semibold">Meeting structure</h2>
             <p className="text-muted-foreground leading-relaxed">
-              The first year focuses on understanding your current standing,
-              identifying gaps, and building deliberately. Clinical experience
-              strategy, shadowing, references, and early professional narrative
-              work. Sessions are structured around where you are and what
-              needs to develop before the application opens.
+              Sessions are held once per month, virtually, for 60 minutes,
+              throughout both years. That consistent rhythm creates genuine
+              continuity: each meeting builds on the last, and nothing gets
+              lost between conversations.
             </p>
           </div>
 
-          <div className="space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Year Two: Application and Candidacy</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              The second year transitions into application strategy: personal
-              statement development, school selection, supplemental essays, and
-              interview preparation. By the time the application cycle opens,
-              you have had a year of mentored preparation behind it. That
-              context matters.
-            </p>
+          <div className="space-y-10">
+            <div className="space-y-4">
+              <h2 className="font-heading text-2xl font-semibold">
+                The two-year arc, year by year
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                While each monthly meeting responds to where you actually are,
+                the mentorship still moves through two distinct phases. Here
+                is what each year is generally built around.
+              </p>
+            </div>
+
+            {twoYearArc.map((year) => (
+              <div key={year.title} className="space-y-4 border-t border-border pt-8">
+                <div>
+                  <h3 className="font-heading text-lg font-semibold text-foreground">
+                    {year.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground italic mt-1">
+                    {year.question}
+                  </p>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  {year.description}
+                </p>
+                <div className="space-y-2.5">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    Key outcomes
+                  </p>
+                  <ul className="space-y-2.5">
+                    {year.outcomes.map((outcome) => (
+                      <li key={outcome} className="flex items-start gap-3">
+                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {outcome}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="space-y-4">

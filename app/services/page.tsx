@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Users } from "lucide-react";
 import { PageHeader } from "@/components/sections/page-header";
@@ -90,11 +91,18 @@ export default function ServicesPage() {
           ))}
         </div>
 
-        <div className="border-t border-border pt-12 max-w-3xl">
+        <div className="border-t border-border pt-12">
           <h2 className="font-heading text-2xl font-semibold text-foreground mb-5">
             How to choose a pathway
           </h2>
-          <div className="space-y-4 text-muted-foreground">
+          <Image
+            src="/images/pathway-diagram.png"
+            alt="Diagram showing how to choose a pathway: the 1-Year pathway (within 12 months of application) moves through personal statement, CASPA strategy, and interview prep; the 2-Year pathway (about two years out) moves through clinical development, narrative, and addressing gaps; the 3-Year pathway (early in the pre-PA journey) moves through prerequisites, clinical experience, and timeline clarity. Each path leads to a strong PA school application."
+            width={2200}
+            height={1238}
+            className="w-full h-auto rounded border border-border mb-8"
+          />
+          <div className="space-y-4 text-muted-foreground max-w-3xl">
             <p className="leading-relaxed">
               If you are within 12 months of your intended application cycle and
               your foundational preparation, including GPA, clinical hours, and references,

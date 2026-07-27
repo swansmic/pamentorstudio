@@ -332,10 +332,10 @@ export default function StudentQaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_460px] gap-12 items-center">
             <div>
-              <h1 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+              <h1 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4">
                 Student Q&A
               </h1>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-xl md:text-2xl font-bold text-foreground leading-relaxed">
                 Real answers to the questions pre-PA students ask most,
                 answered directly by an experienced admissions committee
                 chair.

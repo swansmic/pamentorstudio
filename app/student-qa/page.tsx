@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { PageHeader } from "@/components/sections/page-header";
 import { ContentSection } from "@/components/sections/content-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { createMetadata } from "@/lib/metadata";
@@ -329,20 +328,31 @@ const qaItems: QaItem[] = [
 export default function StudentQaPage() {
   return (
     <>
-      <PageHeader
-        label="Student Q&A"
-        title="Admissions advice from someone who has reviewed more than 3,000 applications."
-        description="Real answers to the questions pre-PA students ask most, answered directly by an experienced admissions committee chair."
-      />
+      <div className="py-16 md:py-24 border-b border-border">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_320px] gap-12 items-center">
+            <div>
+              <h1 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-5">
+                Student Q&A
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                Real answers to the questions pre-PA students ask most,
+                answered directly by an experienced admissions committee
+                chair.
+              </p>
+            </div>
+            <Image
+              src="/images/pre-pa-fears.png"
+              alt="10 Common Pre-PA Fears and how Dr. Strange addresses them through coaching: not knowing where to start, starting too late, a weak GPA or prerequisites, clinical experience that isn't meaningful enough, difficulty finding shadowing, not knowing what admissions committees want, an unclear story, fear of scrambling at the last minute, wanting a personalized rather than generic service, and wanting to grow as an applicant rather than have the work done for you."
+              width={1440}
+              height={1800}
+              className="w-full h-auto rounded border border-border"
+            />
+          </div>
+        </div>
+      </div>
 
       <ContentSection narrow>
-        <Image
-          src="/images/pre-pa-fears.png"
-          alt="10 Common Pre-PA Fears and how Dr. Strange addresses them through coaching: not knowing where to start, starting too late, a weak GPA or prerequisites, clinical experience that isn't meaningful enough, difficulty finding shadowing, not knowing what admissions committees want, an unclear story, fear of scrambling at the last minute, wanting a personalized rather than generic service, and wanting to grow as an applicant rather than have the work done for you."
-          width={1440}
-          height={1800}
-          className="w-full h-auto rounded border border-border mb-16"
-        />
         <StudentQaList items={qaItems} />
       </ContentSection>
 

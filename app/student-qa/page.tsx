@@ -330,12 +330,12 @@ export default function StudentQaPage() {
     <>
       <div className="py-16 md:py-24 border-b border-border">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_320px] gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-12 items-center">
             <div>
-              <h1 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-5">
+              <h1 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
                 Student Q&A
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Real answers to the questions pre-PA students ask most,
                 answered directly by an experienced admissions committee
                 chair.

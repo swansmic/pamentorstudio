@@ -128,6 +128,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Applicant Blueprint */}
+      <section className="py-20 md:py-28 border-b border-border">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <Image
+            src="/images/pa-applicant-blueprint.png"
+            alt="The Competitive PA Applicant Blueprint: academic readiness, meaningful clinical experience, purposeful leadership, strong narrative, and strategic school selection all feed into PA school acceptance."
+            width={1400}
+            height={1400}
+            className="w-full h-auto"
+          />
+        </div>
+      </section>
+
       {/* Credibility */}
       <section className="py-20 md:py-28 border-b border-border bg-muted/40">
         <div className="max-w-6xl mx-auto px-6">

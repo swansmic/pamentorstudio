@@ -330,7 +330,7 @@ export default function StudentQaPage() {
     <>
       <div className="py-16 md:py-24 border-b border-border">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_460px] gap-12 items-center">
             <div>
               <h1 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
                 Student Q&A
@@ -346,7 +346,7 @@ export default function StudentQaPage() {
               alt="10 Common Pre-PA Fears and how Dr. Strange addresses them through coaching: not knowing where to start, starting too late, a weak GPA or prerequisites, clinical experience that isn't meaningful enough, difficulty finding shadowing, not knowing what admissions committees want, an unclear story, fear of scrambling at the last minute, wanting a personalized rather than generic service, and wanting to grow as an applicant rather than have the work done for you."
               width={1440}
               height={1800}
-              className="w-full h-auto rounded border border-border"
+              className="w-full max-w-[460px] h-auto rounded border border-border md:ml-auto"
             />
           </div>
         </div>

@@ -171,6 +171,16 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
+              <div className="mt-8 pt-6 border-t border-border">
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
+                  Published Research
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Strange M.{" "}
+                  <em>Diagnosis and Outcomes: Point-of-Care Ultrasound Utilization in the Emergency Department.</em>{" "}
+                  University of Lynchburg DMSc Doctoral Project Assignment Repository. 2021; 3(1).
+                </p>
+              </div>
             </div>
 
             <div>
@@ -190,9 +200,7 @@ export default function HomePage() {
                 Her expertise extends beyond the admissions committee. Dr. Strange has presented at the Physician Assistant Education Association (PAEA) Regional Meeting on admissions factors, sharing evidence-informed approaches to holistic applicant review and the characteristics that contribute to successful candidates.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Her published research includes Strange M.{" "}
-                <em>Diagnosis and Outcomes: Point-of-Care Ultrasound Utilization in the Emergency Department.</em>{" "}
-                University of Lynchburg DMSc Doctoral Project Assignment Repository. 2021; 3(1).
+                She has also published research on point-of-care ultrasound utilization and diagnostic outcomes in the emergency department.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 PA Mentor Studio was created to provide applicants with mentorship grounded in firsthand experience. Rather than focusing on shortcuts or application &ldquo;hacks,&rdquo; Dr. Strange helps applicants understand how admissions committees evaluate academic preparation, clinical experiences, professionalism, leadership, service, and personal growth, empowering them to build authentic, competitive applications.

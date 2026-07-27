@@ -153,18 +153,14 @@ function buildRegistrantText(firstName: string): string {
 }
 
 async function subscribeToKit(firstName: string, email: string): Promise<void> {
-  const apiKey = process.env.KIT_API_KEY;
+  const apiSecret = process.env.KIT_API_KEY;
   const sequenceId = process.env.KIT_SEQUENCE_ID;
-  if (!apiKey || !sequenceId) return;
+  if (!apiSecret || !sequenceId) return;
 
-  const res = await fetch(`https://api.kit.com/v4/sequences/${sequenceId}/subscribers`, {
+  const res = await fetch(`https://api.convertkit.com/v3/sequences/${sequenceId}/subscribe`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({ email_address: email, first_name: firstName }),
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ api_secret: apiSecret, email, first_name: firstName }),
   });
 
   if (!res.ok) {

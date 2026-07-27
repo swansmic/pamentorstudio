@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHeader } from "@/components/sections/page-header";
 import { ContentSection } from "@/components/sections/content-section";
 import { CtaSection } from "@/components/sections/cta-section";
@@ -335,6 +336,13 @@ export default function StudentQaPage() {
       />
 
       <ContentSection narrow>
+        <Image
+          src="/images/pre-pa-fears.png"
+          alt="10 Common Pre-PA Fears and how Dr. Strange addresses them through coaching: not knowing where to start, starting too late, a weak GPA or prerequisites, clinical experience that isn't meaningful enough, difficulty finding shadowing, not knowing what admissions committees want, an unclear story, fear of scrambling at the last minute, wanting a personalized rather than generic service, and wanting to grow as an applicant rather than have the work done for you."
+          width={1440}
+          height={1800}
+          className="w-full h-auto rounded border border-border mb-16"
+        />
         <StudentQaList items={qaItems} />
       </ContentSection>
 

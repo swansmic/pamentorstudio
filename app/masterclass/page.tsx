@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { RegisterForm } from "./register-form";
+import { InfoAccordion } from "@/components/masterclass/info-accordion";
 
 export const metadata: Metadata = {
   title: "What Admissions Committees Really Look For | Free Masterclass",
@@ -209,24 +210,15 @@ export default function MasterclassPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {learnItems.map((item) => (
-              <div
-                key={item.number}
-                className="border border-border rounded bg-card p-7"
-              >
-                <p className="text-xs font-semibold tracking-widest text-muted-foreground mb-4 font-sans">
-                  {item.number}
-                </p>
-                <h3 className="font-heading text-lg font-semibold text-foreground leading-snug mb-3">
-                  {item.heading}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {item.body}
-                </p>
-              </div>
-            ))}
-          </div>
+          <InfoAccordion
+            idPrefix="learn"
+            numberStyle="plain"
+            items={learnItems.map((item) => ({
+              number: item.number,
+              title: item.heading,
+              body: item.body,
+            }))}
+          />
         </div>
       </section>
 
@@ -247,28 +239,15 @@ export default function MasterclassPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {mistakes.map((m) => (
-              <div
-                key={m.number}
-                className="border border-border rounded bg-card p-7 flex gap-5"
-              >
-                <div className="flex-shrink-0 pt-0.5">
-                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-muted border border-border text-xs font-semibold text-muted-foreground font-sans">
-                    {m.number}
-                  </span>
-                </div>
-                <div>
-                  <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
-                    {m.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {m.teaser}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <InfoAccordion
+            idPrefix="mistake"
+            numberStyle="badge"
+            items={mistakes.map((m) => ({
+              number: m.number,
+              title: m.title,
+              body: m.teaser,
+            }))}
+          />
 
           {/* Mid-page CTA nudge */}
           <div className="mt-12 text-center">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { WatchPageEvents, ApplyButton } from "./watch-client";
+import { WatchPageEvents, ApplyButton, InAppBrowserBanner } from "./watch-client";
 
 export const metadata: Metadata = {
   title: "Watch the Masterclass | PA Mentor Studio",
@@ -25,6 +25,8 @@ export default function MasterclassWatchPage() {
           <p className="text-xl text-muted-foreground leading-relaxed mb-12">
             Insights From Reviewing 3,000+ PA School Applications
           </p>
+
+          <InAppBrowserBanner />
 
           <div className="aspect-video w-full rounded border border-border bg-black overflow-hidden">
             <video

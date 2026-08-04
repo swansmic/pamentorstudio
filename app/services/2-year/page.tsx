@@ -147,7 +147,7 @@ export default function TwoYearPage() {
 
       <CtaSection
         heading="If you are two years from your application cycle."
-        body="Apply for coaching to begin the inquiry process. A consultation is included before any enrollment is extended."
+        body="Book a free call to talk through your timeline and see if this pathway is the right fit. A consultation is included before any enrollment is extended."
         variant="muted"
       />
     </>

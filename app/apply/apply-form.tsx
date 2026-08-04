@@ -36,12 +36,13 @@ export function ApplyForm() {
     return (
       <div className="rounded border border-border bg-card p-8 text-center space-y-4">
         <p className="font-heading text-xl font-semibold text-foreground">
-          Your application has been received.
+          Your request has been received.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Thank you for taking the time to apply. Applications are reviewed
-          individually, and you will receive a response within 5–7 business
-          days. Please check your email, including your spam folder.
+          Thank you for reaching out. Requests are reviewed individually,
+          and you will receive a response within 5–7 business days to
+          schedule your free call. Please check your email, including your
+          spam folder.
         </p>
       </div>
     );
@@ -197,12 +198,12 @@ export function ApplyForm() {
         disabled={status === "submitting"}
         className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground text-sm font-medium rounded hover:bg-primary/90 disabled:opacity-60 disabled:cursor-not-allowed transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
       >
-        {status === "submitting" ? "Submitting…" : "Submit Application"}
+        {status === "submitting" ? "Submitting…" : "Request My Free Call"}
       </button>
 
       <p className="text-xs text-muted-foreground">
         Submitting this form does not create a financial obligation. A
-        consultation will be offered if there appears to be a potential fit.
+        free call will be offered if there appears to be a potential fit.
       </p>
     </form>
   );

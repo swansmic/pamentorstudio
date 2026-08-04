@@ -5,9 +5,9 @@ import { ApplyForm } from "./apply-form";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Apply for Coaching",
+  title: "Book a Free Call",
   description:
-    "Submit an application for PA Mentor Studio's mentorship programs. Applications are reviewed individually. A consultation is included before any enrollment is extended.",
+    "Request a free call to talk through PA Mentor Studio's mentorship programs. Requests are reviewed individually. A consultation is included before any enrollment is extended.",
   path: "/apply",
 });
 
@@ -15,9 +15,9 @@ export default function ApplyPage() {
   return (
     <>
       <PageHeader
-        label="Apply for Coaching"
-        title="Begin with an inquiry."
-        description="Applications are reviewed individually. Submitting this form initiates the inquiry process; it is not an enrollment commitment. A consultation will be offered if there appears to be a potential fit."
+        label="Book a Free Call"
+        title="Let's talk about your path."
+        description="Share a bit about where you are, and we'll follow up to schedule your free call. This isn't an enrollment commitment, just a conversation to see if the mentorship is a good fit."
       />
 
       <ContentSection narrow>
@@ -32,22 +32,22 @@ export default function ApplyPage() {
                 {
                   step: "01",
                   label: "Submit this form",
-                  detail: "Your application is reviewed individually, typically within 5–7 business days.",
+                  detail: "Your request is reviewed individually, typically within 5–7 business days.",
                 },
                 {
                   step: "02",
                   label: "Receive a response",
-                  detail: "If your application suggests a potential fit, you will be invited to schedule a consultation.",
+                  detail: "If it looks like a good fit, you will be invited to schedule your free call.",
                 },
                 {
                   step: "03",
-                  label: "Consultation",
+                  label: "Free call",
                   detail: "A structured conversation to explore your goals and determine whether the mentorship is appropriate.",
                 },
                 {
                   step: "04",
                   label: "Enrollment decision",
-                  detail: "Enrollment is extended, or not, after the consultation. No pressure in either direction.",
+                  detail: "Enrollment is extended, or not, after the call. No pressure in either direction.",
                 },
               ].map((item) => (
                 <li key={item.step} className="flex gap-4">
@@ -68,9 +68,9 @@ export default function ApplyPage() {
 
             <div className="mt-8 pt-8 border-t border-border">
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Submitting this application does not create a financial
+                Submitting this form does not create a financial
                 obligation. All enrollment decisions are made after a
-                consultation, and no payment is required before that
+                free call, and no payment is required before that
                 conversation.
               </p>
             </div>

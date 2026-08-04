@@ -45,7 +45,7 @@ export function SiteHeader() {
             href="/apply"
             className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
           >
-            Apply for Coaching
+            Book a Free Call
           </Link>
         </div>
 

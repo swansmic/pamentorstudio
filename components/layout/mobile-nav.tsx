@@ -79,7 +79,7 @@ export function MobileNav({ items }: MobileNavProps) {
                 onClick={close}
                 className="block w-full text-center py-2.5 px-4 bg-primary text-primary-foreground text-sm font-medium rounded hover:bg-primary/90 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
               >
-                Apply for Coaching
+                Book a Free Call
               </Link>
             </li>
           </ul>

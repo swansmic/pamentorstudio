@@ -15,7 +15,7 @@ interface CtaSectionProps {
 export function CtaSection({
   heading,
   body,
-  ctaLabel = "Apply for Coaching",
+  ctaLabel = "Book a Free Call",
   ctaHref = "/apply",
   secondaryLabel,
   secondaryHref,

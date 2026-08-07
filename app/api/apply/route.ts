@@ -125,6 +125,9 @@ export async function POST(request: Request) {
   }
 
   const timestamp = new Date().toUTCString();
+  const fromEmail = process.env.APPLICATION_FROM_EMAIL;
+  const toEmail = process.env.APPLICATION_NOTIFICATION_EMAIL;
+  const hasResend = !!(process.env.RESEND_API_KEY && fromEmail && toEmail);
 
   console.log("[Apply]", {
     name: `${body.firstName} ${body.lastName}`,
@@ -134,10 +137,15 @@ export async function POST(request: Request) {
     timestamp,
   });
 
+  if (!hasResend) {
+    console.warn("[Apply] Resend env vars not configured — skipping notification email");
+    return NextResponse.json({ success: true }, { status: 200 });
+  }
+
   try {
     await resend.emails.send({
-      from: process.env.APPLICATION_FROM_EMAIL as string,
-      to: process.env.APPLICATION_NOTIFICATION_EMAIL as string,
+      from: fromEmail as string,
+      to: toEmail as string,
       subject: "New PA Mentor Studio Coaching Application",
       html: buildHtml(body, timestamp),
       text: buildText(body, timestamp),
@@ -147,10 +155,8 @@ export async function POST(request: Request) {
       "[Apply] Email delivery failed:",
       err instanceof Error ? err.message : "Unknown error"
     );
-    return NextResponse.json(
-      { error: "Submission failed. Please try again or reach out directly." },
-      { status: 500 }
-    );
+    // Don't block the applicant on an email-provider hiccup — the application
+    // details are already captured above via console.log.
   }
 
   return NextResponse.json({ success: true }, { status: 200 });

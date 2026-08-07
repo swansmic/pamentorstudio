@@ -6,6 +6,7 @@ type Status = "idle" | "submitting" | "success" | "error";
 
 export function ApplyForm() {
   const [status, setStatus] = useState<Status>("idle");
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -25,9 +26,16 @@ export function ApplyForm() {
         setStatus("success");
         form.reset();
       } else {
+        const body = await res.json().catch(() => null);
+        setErrorMessage(
+          res.status === 400 && body?.error
+            ? body.error
+            : "Something went wrong. Please try again or email directly."
+        );
         setStatus("error");
       }
     } catch {
+      setErrorMessage("Something went wrong. Please try again or email directly.");
       setStatus("error");
     }
   }
@@ -53,7 +61,7 @@ export function ApplyForm() {
   const labelClass = "block text-sm font-medium text-foreground mb-1.5";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+    <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label htmlFor="firstName" className={labelClass}>
@@ -187,9 +195,9 @@ export function ApplyForm() {
         />
       </div>
 
-      {status === "error" && (
+      {status === "error" && errorMessage && (
         <p className="text-sm text-destructive" role="alert">
-          Something went wrong. Please try again or email directly.
+          {errorMessage}
         </p>
       )}
 

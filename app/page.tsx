@@ -210,7 +210,16 @@ export default function HomePage() {
                 With clinical experience in cardiology and a career in physician associate education since 2019, Dr. Strange brings a unique perspective that bridges clinical practice, higher education, and admissions. She has served for years as an Admissions Committee Chair, reviewing more than 3,000 PA school applications and participating in countless admissions decisions across multiple application cycles.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Her expertise extends beyond the admissions committee. Dr. Strange has presented at the Physician Assistant Education Association (PAEA) Regional Meeting on admissions factors, sharing evidence-informed approaches to holistic applicant review and the characteristics that contribute to successful candidates.
+                Her expertise extends beyond the admissions committee. Dr. Strange has presented at the Physician Assistant Education Association (PAEA) Regional Meeting on admissions factors, sharing evidence-informed approaches to holistic applicant review and the characteristics that contribute to successful candidates. In 2025, she was also featured as a speaker at{" "}
+                <a
+                  href="https://www.gvsu.edu/gvnext/2025/gvsu-faculty-researchers-highlight-ais-role-in-future-of-medicine.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
+                >
+                  GVSU&apos;s GR Tech Week
+                </a>
+                , discussing AI&apos;s role in the future of medicine.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 She has also published research on point-of-care ultrasound utilization and diagnostic outcomes in the emergency department.

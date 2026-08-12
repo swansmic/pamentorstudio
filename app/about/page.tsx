@@ -25,17 +25,29 @@ export default function AboutPage() {
           <div className="space-y-4">
             <h2 className="font-heading text-2xl font-semibold">The foundation</h2>
             <p className="text-muted-foreground leading-relaxed">
-              PA Mentor Studio was created by a PA who has spent years on the
-              other side of the admissions process, as a committee chair
-              reviewing applications, contributing to selection decisions, and
-              watching what distinguishes candidates who are genuinely prepared
-              from those who are simply trying to look that way.
+              PA Mentor Studio was founded by Dr. Michelle Strange, DMSc,
+              PA-C, RDCS (AE)(PE), a Physician Associate since 2015 and a
+              PA educator since 2019. In that time, she has spent years on
+              the other side of the admissions process, as a committee
+              chair reviewing applications, contributing to selection
+              decisions, and watching what distinguishes candidates who are
+              genuinely prepared from those who are simply trying to look
+              that way.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               More than 3,000 applications reviewed. Multiple admissions cycles.
               A 2025 PAEA Regional Conference speaking engagement. This is the
               foundation the mentorship is built on, not a general familiarity
               with the process, but direct, structured experience inside it.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Along the way, Dr. Strange watched too many qualified
+              applicants struggle unnecessarily for acceptance into a
+              program, not for lack of potential, but for lack of guidance
+              in presenting it. That is what drives this work: a genuine
+              passion for helping students build the strongest application
+              possible and showcase who they are and what they bring to the
+              profession.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               The goal behind all of it is straightforward: to help aspiring PAs

@@ -14,6 +14,7 @@ export const navItems: NavItem[] = [
   { label: "Blog", href: "/blog" },
   { label: "Student Q&A", href: "/student-qa" },
   { label: "FAQ", href: "/faq" },
+  { label: "Stay Updated", href: "/updates" },
 ];
 
 export const footerLinks = {
@@ -28,6 +29,7 @@ export const footerLinks = {
     { label: "Student Q&A", href: "/student-qa" },
     { label: "FAQ", href: "/faq" },
     { label: "About", href: "/about" },
+    { label: "Stay Updated", href: "/updates" },
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy" },

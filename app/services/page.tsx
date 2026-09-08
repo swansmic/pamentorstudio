@@ -130,6 +130,39 @@ export default function ServicesPage() {
 
         <div className="border-t border-border pt-12 mt-12 max-w-3xl">
           <h2 className="font-heading text-2xl font-semibold text-foreground mb-5">
+            Applying now, or want a shorter commitment?
+          </h2>
+          <div className="space-y-4 text-muted-foreground">
+            <p className="leading-relaxed">
+              The three pathways above are structured, multi-month
+              relationships. If you are already applying for interviews,
+              close to submitting, or simply looking for focused help
+              without a longer-term commitment, individualized review
+              meetings are also available.
+            </p>
+            <p className="leading-relaxed">
+              These sessions are built around your current situation rather
+              than a fixed curriculum, typically ranging from{" "}
+              <strong className="text-foreground">1 to 3 meetings</strong>{" "}
+              depending on what you need: reviewing an application before
+              submission, preparing for an upcoming interview, or getting a
+              second opinion at a specific decision point.
+            </p>
+            <p className="leading-relaxed">
+              If this sounds like a better fit than the pathways above,
+              reach out and we can figure out what makes sense together.
+            </p>
+          </div>
+          <Link
+            href="/apply"
+            className="inline-flex items-center justify-center mt-6 px-6 py-3 bg-primary text-primary-foreground text-sm font-medium rounded hover:bg-primary/90 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
+          >
+            Book a Free Call
+          </Link>
+        </div>
+
+        <div className="border-t border-border pt-12 mt-12 max-w-3xl">
+          <h2 className="font-heading text-2xl font-semibold text-foreground mb-5">
             Why enrollment stays small
           </h2>
           <div className="space-y-4 text-muted-foreground">

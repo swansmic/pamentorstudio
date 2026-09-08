@@ -87,7 +87,9 @@ export function SiteFooter() {
             guidance to PA school applicants. This is not a guarantee of
             admission and does not constitute a promise of outcome. Results are
             the product of the applicant&apos;s own effort, merit, and individual
-            circumstances.{" "}
+            circumstances. PA Mentor Studio is an independent educational
+            consultancy and is not affiliated with, endorsed by, or sponsored
+            by any university or PA program.{" "}
             <Link
               href="/disclaimer"
               className="underline underline-offset-2 hover:text-foreground transition-colors"

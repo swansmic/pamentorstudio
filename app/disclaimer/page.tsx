@@ -77,6 +77,20 @@ export default function DisclaimerPage() {
 
           <div className="space-y-3">
             <h2 className="font-heading text-lg font-semibold text-foreground">
+              No university affiliation
+            </h2>
+            <p className="leading-relaxed">
+              PA Mentor Studio is an independent educational consultancy. It
+              is not affiliated with, endorsed by, sponsored by, or acting on
+              behalf of any university, college, or PA program. Any
+              references to specific schools or programs on this website are
+              for informational purposes only and do not imply a partnership
+              or relationship with those institutions.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h2 className="font-heading text-lg font-semibold text-foreground">
               Professional advice disclaimer
             </h2>
             <p className="leading-relaxed">
